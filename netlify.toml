@@ -7,5 +7,5 @@
 
 [build]
   base    = "gatsby"
-  publish = "gatsby/build/"
+  publish = "gatsby/public/"
   command = "npm run build"
