@@ -1,11 +1,14 @@
 import React from "react";
 import Link from "gatsby-link";
 
+import MainMenu from "components/Menu/MainMenu";
+
 export default function Header(props) {
   return (
-    <section id="header">
+    <section id="">
+      <MainMenu />
       <div className="inner">
-        <span className="icon major fa-cloud" />
+        {/*<span className="icon major fa-cloud" />*/}
         <h1>Gatsby Central</h1>
         <p />
         <ul className="actions">
