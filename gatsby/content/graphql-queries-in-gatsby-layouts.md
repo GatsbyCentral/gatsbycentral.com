@@ -1,8 +1,7 @@
 ---
-Title: GraphQL queries in Gatsby layouts
-Author: Callum Macdonald
-AuthorUsername: chmac
-LastUpdated: 2018-02-28
+path: "/graphql-queries-in-gatsby-layouts"
+title: GraphQL queries in Gatsby layouts
+date: "2018-02-28"
 ---
 How can you use data from GraphQL queries in Gatsby layouts? You have data in Gatsby that you want to use inside templates. Is there a layout version of `pageQuery`?
 
