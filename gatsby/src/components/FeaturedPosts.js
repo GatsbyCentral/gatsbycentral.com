@@ -14,13 +14,12 @@ const Posts = styled.div`
 `;
 
 const renderPosts = map(post => (
-  <div>
+  <div key={post.node.id}>
     <Link to={post.node.frontmatter.path}>{post.node.frontmatter.title}</Link>
   </div>
 ));
 
 const FeaturedPosts = props => {
-  console.log(props);
   return (
     <div>
       <Title>Get Started</Title>

@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   background-color: ${props => props.theme.primaryColor};
   color: white;
   padding: 1rem 0;
+  margin-bottom: 1rem;
 `;
 
 const MenuItem = styled.div`
