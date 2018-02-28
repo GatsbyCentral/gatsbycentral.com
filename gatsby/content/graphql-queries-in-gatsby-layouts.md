@@ -6,7 +6,7 @@ LastUpdated: 2018-02-28
 ---
 How can you use data from GraphQL queries in Gatsby layouts? You have data in Gatsby that you want to use inside templates. Is there a layout version of `pageQuery`?
 
-tl;dr Your query variable can be called anything. It must be exported. The query must be named. That name must be unique. Data arrives as `props.data`.
+> **tl;dr** Your query variable can be called anything. It must be exported. The query must be named. That name must be unique. Data arrives as `props.data`.
 
 ## `pageQuery` is not special
 
@@ -58,17 +58,21 @@ You don't need to import `graphql`. It must be imported by Gatsby. I'm not sure,
 
 You can put all this together like so.
 
-   export const templateQuery = graphql`
-     query DefaultTemplate {
-       site {
-        siteMetadata {
-          title
-          author
-        }
-      }
+```es6
+export const templateQuery = graphql`
+  query DefaultTemplate {
+    site {
+     siteMetadata {
+       title
+       author
      }
-   `
+   }
+  }
+`
+```
 
 Then inside your component's `render()` function you can do something like this:
 
-   <p>Post by {this.props.data.site.siteMetadata.title}</p>
+```es6
+<p>Post by {this.props.data.site.siteMetadata.title}</p>
+```
