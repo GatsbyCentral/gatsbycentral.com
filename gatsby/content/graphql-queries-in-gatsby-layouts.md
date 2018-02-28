@@ -19,7 +19,7 @@ My next thought was, does it need to be exported? Short answer, yes.
 
 I tried removing the `export`. Gatsby would build, but no data was reaching my components. I wasted a few hours. I added back the `export` and my data was back. Great.
 
-I'm not 100% sure why the query must be exported. I think that query parsing is a 2 step process in Gatsby. See the article [How are queries parsed in Gatsby for more details](LINK).
+I'm not 100% sure why the query must be exported. I think that query parsing is a 2 step process in Gatsby. See the article [How are queries parsed in Gatsby](LINK) for more details.
 
 ## The query must be named
 
