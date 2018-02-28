@@ -1,40 +1,41 @@
-const { name } = require('./package.json');
+const { name } = require("./package.json");
 
 module.exports = {
   pathPrefix: process.env.CI ? `/${name}` : `/`,
   siteMetadata: {
-    author: 'You!',
-    title: `Gatsby Default (Blog) Starter`,
+    author: "You!",
+    title: `Gatsby Default (Blog) Starter`
   },
   plugins: [
-    'gatsby-plugin-react-next',
-    'gatsby-plugin-catch-links',
+    "gatsby-plugin-resolve-src",
+    "gatsby-plugin-react-next",
+    "gatsby-plugin-catch-links",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'pages',
-        path: `${__dirname}/content`,
-      },
+        name: "pages",
+        path: `${__dirname}/content`
+      }
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages`,
-      },
+        name: "pages",
+        path: `${__dirname}/src/pages`
+      }
     },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        precision: 8,
+        precision: 8
       }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               linkImagesToOriginal: false
             }
@@ -42,7 +43,7 @@ module.exports = {
         ]
       }
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp'
-  ],
-}
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp"
+  ]
+};
