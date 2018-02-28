@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
-const Footer = (props) => {
+const Container = styled.div`
+  text-align: center;
+  margin-top: 2rem;
+`;
+
+const Footer = props => {
   return (
-    <div>
+    <Container>
+      &copy;{" "}
+      <a href="https://superlumen.io" target="_blank">
+        superlumen.io
+      </a>
+    </Container>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Footer
+export default Footer;
