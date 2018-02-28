@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
+import Meta from "components/Meta/Meta";
 import Link from "gatsby-link";
 
 export default function Template({ data, pathContext }) {
@@ -8,6 +8,7 @@ export default function Template({ data, pathContext }) {
 
   return (
     <div>
+      <Meta data={frontmatter} />
       <h1>{frontmatter.title}</h1>
       <p dangerouslySetInnerHTML={{ __html: html }} />
       <Link to="/">Home</Link>

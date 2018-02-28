@@ -3,9 +3,8 @@ import { Helmet } from "react-helmet";
 
 const Meta = props => {
   const { data } = props;
-  console.log(data);
   return (
-    <Helmet>
+    <Helmet titleTemplate="%s | Gatsby Central" defaultTitle="Gatsby Central">
       <title>{data.title}</title>
       <meta name="description" content={data.description} />
       <meta name="keywords" content={data.title} />
