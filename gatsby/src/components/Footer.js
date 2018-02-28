@@ -4,15 +4,20 @@ import styled from "styled-components";
 const Container = styled.div`
   text-align: center;
   margin-top: 2rem;
+  color: white;
+  background-color: ${({ theme }) => theme.secondaryColor};
+  padding: 1rem;
 `;
+
+const Link = styled.a``;
 
 const Footer = props => {
   return (
     <Container>
       &copy;{" "}
-      <a href="https://superlumen.io" target="_blank">
+      <Link href="https://superlumen.io" target="_blank">
         superlumen.io
-      </a>
+      </Link>
     </Container>
   );
 };
