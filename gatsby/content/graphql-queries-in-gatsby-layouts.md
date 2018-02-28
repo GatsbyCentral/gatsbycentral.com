@@ -19,7 +19,13 @@ My next thought was, does it need to be exported? Short answer, yes.
 
 I tried removing the `export`. Gatsby would build, but no data was reaching my components. I wasted a few hours. I added back the `export` and my data was back. Great.
 
-I'm not 100% sure why the query must be exported. I think that query parsing is a 2 step process in Gatsby. See the article [How are queries parsed in Gatsby](LINK) for more details.
+The export must be like this:
+
+```es6
+export const queryVariable = graphql`QUERY`
+```
+
+> Aside. Queries are parsed [here](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/internal-plugins/query-runner/file-parser.js#L81). The parser looks for a named export, then a `graphql` tag. If you break that pattern, the query won't be found. For example you can't use `exports.query = ...`.
 
 ## The query must be named
 
