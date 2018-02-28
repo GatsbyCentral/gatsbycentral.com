@@ -1,15 +1,31 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "gatsby-link";
+import Container from "components/Layout/Container";
 
-const Container = styled.div`
+const Wrapper = styled.div`
   background-color: ${props => props.theme.primaryColor};
   color: white;
-  height: 2em;
-  line-height: 2em;
+  padding: 1rem 0;
+`;
+
+const MenuItem = styled.div`
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  display: inline;
 `;
 
 const MainMenu = () => {
-  return <Container>Menu</Container>;
+  return (
+    <Wrapper>
+      <Container>
+        <MenuItem>
+          <Link to="/">Gatsby Central</Link>
+        </MenuItem>
+        {/*<MenuItem>Posts</MenuItem>*/}
+      </Container>
+    </Wrapper>
+  );
 };
 
 export default MainMenu;

@@ -1,23 +1,22 @@
 import React from "react";
 import Link from "gatsby-link";
+import styled from "styled-components";
 
 import MainMenu from "components/Menu/MainMenu";
+
+const Heading = styled.div`
+  text-align: center;
+  padding-top: 2rem;
+`;
 
 export default function Header(props) {
   return (
     <section id="">
-      <MainMenu />
       <div className="inner">
-        {/*<span className="icon major fa-cloud" />*/}
-        <h1>Gatsby Central</h1>
-        <p />
-        <ul className="actions">
-          <li>
-            <a href="#one" className="button scrolly">
-              Discover
-            </a>
-          </li>
-        </ul>
+        <Heading>
+          <h2>Gatsby Central</h2>
+          <p>The community for gatsby developers</p>
+        </Heading>
       </div>
     </section>
   );
