@@ -5,6 +5,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "gatsby": "~1.9.45",
+    "gatsby-image": "^1.0.40",
     "gatsby-jay": "^0.1.2",
     "gatsby-link": "~1.6.17",
     "gatsby-plugin-catch-links": "~1.0.1",
@@ -43,7 +44,9 @@
     "selenium-server-standalone-jar": "^3.6.0",
     "selenium-webdriver": "^3.6.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -54,8 +57,7 @@
     "preserve": "npm run build",
     "serve": "gatsby serve",
     "start": "npm run develop",
-    "format":
-      "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
+    "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
