@@ -40,6 +40,12 @@ module.exports = {
             options: {
               linkImagesToOriginal: false
             }
+          },
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: {
+              classPrefix: "language-"
+            }
           }
         ]
       }
