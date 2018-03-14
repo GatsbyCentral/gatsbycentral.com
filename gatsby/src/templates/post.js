@@ -10,7 +10,7 @@ export default function Template({ data, pathContext }) {
     <div>
       <Meta data={frontmatter} />
       <h1>{frontmatter.title}</h1>
-      <p dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       <Link to="/">Home</Link>
     </div>
   );
