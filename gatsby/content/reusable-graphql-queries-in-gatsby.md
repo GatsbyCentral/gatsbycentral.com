@@ -1,7 +1,7 @@
 ---
 path: "/reusable-graphql-queries-in-gatsby"
 title: Reusable GraphQL queries in Gatsby
-date: "2018-02-28"
+date: "2018-02-27"
 ---
 You want to use the same query in multiple components. Or maybe you want to use queries outside of pages / layouts. Well, you can't, but you can use fragments!
 
@@ -61,7 +61,7 @@ You can define fragments in any of your components. You just export the fragment
 
 Your fragment must follow the export syntax like so:
 
-```es6
+```javascript
 export const variableName = graphql`
 fragment FragName on TypeName { ... }
 `

@@ -21,7 +21,7 @@ I tried removing the `export`. Gatsby would build, but no data was reaching my c
 
 The export must be like this:
 
-```es6
+```javascript
 export const queryVariable = graphql`QUERY`
 ```
 
@@ -31,9 +31,11 @@ export const queryVariable = graphql`QUERY`
 
 You must give each query a unique name. The query name is not the same as the **variable name**.
 
-   export const queryVariable = graphql`
-     query QueryName {...}
-   `
+```javascript
+export const queryVariable = graphql`
+ query QueryName {...}
+`
+```
 
 The variable is called `queryVariable` but the query is called `QueryName`. You must ensure that every query has a name.
 
@@ -51,7 +53,9 @@ You can use queries in templates or page components. They work exactly the same 
 
 You must wrap your query in the `graphql` template tag like this:
 
-    export const myQuery = graphql` query goes here `
+```javascript
+export const myQuery = graphql` query goes here `
+```
 
 This uses a javascript feature called [tagged template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). You don't need to understand all the details of how it works. I've read the spec several times and I still don't get it. You just need to do it!
 
@@ -63,7 +67,7 @@ You don't need to import `graphql`. It must be imported by Gatsby. I'm not sure,
 
 You can put all this together like so.
 
-```es6
+```javascript
 export const templateQuery = graphql`
   query DefaultTemplate {
     site {
@@ -78,6 +82,6 @@ export const templateQuery = graphql`
 
 Then inside your component's `render()` function you can do something like this:
 
-```es6
+```javascript
 <p>Post by {this.props.data.site.siteMetadata.title}</p>
 ```
