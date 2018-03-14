@@ -5,6 +5,7 @@ const Meta = props => {
   const { data } = props;
 
   const title = data.title || "Gatsby Central";
+  const path = data.path || "";
 
   return (
     <Helmet titleTemplate="%s | Gatsby Central" defaultTitle="Gatsby Central">
@@ -16,6 +17,7 @@ const Meta = props => {
       {data.image ? <meta name="og:image" content={data.image.url} /> : null}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@GatsbyCentral" />
+      <link rel="canonical" href={`https://www.gatsbycentral.com${path}`} />
     </Helmet>
   );
 };
