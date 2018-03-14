@@ -11,6 +11,7 @@ const Meta = props => {
       <meta name="og:title" content={data.title} />
       <meta name="og:description" content={data.description} />
       {data.image ? <meta name="og:image" content={data.image.url} /> : null}
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@GatsbyCentral" />
     </Helmet>
   );
