@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 const Meta = props => {
   const { data } = props;
 
-  const title = data.title || "Gatscy Central";
+  const title = data.title || "Gatsby Central";
 
   return (
     <Helmet titleTemplate="%s | Gatsby Central" defaultTitle="Gatsby Central">
