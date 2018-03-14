@@ -2,6 +2,9 @@ import React from "react";
 import Meta from "components/Meta/Meta";
 import Link from "gatsby-link";
 
+// Import the prismjs theme for syntax highlighting in markdown
+import "prismjs/themes/prism-coy.css";
+
 export default function Template({ data, pathContext }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
