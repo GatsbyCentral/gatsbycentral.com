@@ -45,7 +45,7 @@ If you have 107 blog posts and 10 per page, you need 11 paginated pages. With 10
 
 In javascript, that is:
 
-```es6
+```javascript
 const paginatedPagesCount = Math.ceil(blogPostsCount / blogPostsPerPaginatedPage);
 ```
 
@@ -53,7 +53,7 @@ const paginatedPagesCount = Math.ceil(blogPostsCount / blogPostsPerPaginatedPage
 
 Creating the paths like `/blog` and `/blog/2` requires a little logic. We can put all of this into a helper function. You can define it at the top scope in `gatsby-node.js`.
 
-```es6
+```javascript
 const paginationPath = (path, page, totalPages) => {
   if (page === 0) {
     return path
@@ -73,7 +73,7 @@ We'll assume you've already fetched your blog posts as normal inside `gatsby-nod
 
 Then you can create pages like this.
 
-```es6
+```javascript
 // How many posts do we have?
 const blogPostsCount = blogPosts.length;
 // How many posts per paginated page?

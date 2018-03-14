@@ -61,7 +61,7 @@ You can define fragments in any of your components. You just export the fragment
 
 Your fragment must follow the export syntax like so:
 
-```es6
+```javascript
 export const variableName = graphql`
 fragment FragName on TypeName { ... }
 `
