@@ -26,7 +26,10 @@ export default function Index({ data: { allMarkdownRemark: { edges } } }) {
 
 export const query = graphql`
   query featuredPosts {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      limit: 3
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           id
