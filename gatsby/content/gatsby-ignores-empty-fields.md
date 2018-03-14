@@ -1,7 +1,7 @@
 ---
 path: "/gatsby-ignores-empty-fields"
 title: Gatsby ignores empty fields
-date: "2018-02-28"
+date: "2018-02-24"
 ---
 Your Gatsby GraphQL schema is missing data. If one of your fields is empty, it doesn't show up in Gatsby.
 
