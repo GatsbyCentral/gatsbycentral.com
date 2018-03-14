@@ -3,7 +3,6 @@ path: "/gatsby-ignores-empty-fields"
 title: Gatsby ignores empty fields
 date: "2018-02-28"
 ---
-
 Your Gatsby GraphQL schema is missing data. If one of your fields is empty, it doesn't show up in Gatsby.
 
 > **tl;dr** One field can only have one type. Put an empty string instead of null or undefined. Try to fill all fields on all nodes.
