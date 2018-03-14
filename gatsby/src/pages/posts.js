@@ -30,8 +30,6 @@ export const query = graphql`
             title
             path
             date
-            _PARENT
-            parent
           }
         }
       }
