@@ -37,7 +37,7 @@ const Footer = props => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/pg/Gatsby-Central-175136329785915"
+                href="https://www.facebook.com/gatsbycentral/"
                 className="icon alt fa-facebook"
                 target="_blank"
               >

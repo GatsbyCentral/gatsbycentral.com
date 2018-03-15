@@ -4,13 +4,13 @@ import Link from "gatsby-link";
 
 export default function Template({ data, pathContext }) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { frontmatter, html, excerpt } = markdownRemark;
 
   return (
     <div>
-      <Meta data={frontmatter} />
+      <Meta data={{ ...frontmatter, description: excerpt }} />
       <h1>{frontmatter.title}</h1>
-      <p dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       <Link to="/">Home</Link>
     </div>
   );
@@ -20,6 +20,7 @@ export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
