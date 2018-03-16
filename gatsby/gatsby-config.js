@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-resolve-src",
     "gatsby-plugin-remove-trailing-slashes",
+    "gatsby-plugin-netlify",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-next",
     "gatsby-plugin-catch-links",
