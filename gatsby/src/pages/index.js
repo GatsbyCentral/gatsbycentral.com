@@ -1,47 +1,16 @@
 import React from "react";
-import Meta from "components/Meta/Meta";
+import Link from "gatsby-link";
 
-import FeaturedPosts from "components/FeaturedPosts";
-import Header from "../components/Header";
+const IndexPage = () => (
+  <div>
+    <h1>Hi people</h1>
+    <p>
+      This is a starter project for gatsby that we us for our own purpose. Hence
+      it is very opinionated.
+    </p>
+    <p>Now go build something great.</p>
+    <Link to="/about/">Gatsby Central</Link>
+  </div>
+);
 
-import "../styles/main.scss";
-import "../styles/custom.scss";
-
-// SEO meta data for the homepage.
-const meta = {
-  // Omit title for homepage to apply Helmet's default value. Otherwise title
-  // will be  duplicated (both `Gatsby Central`).
-  description: "The Community for Gatsby Developers"
-};
-
-export default function Index({ data: { allMarkdownRemark: { edges } } }) {
-  return (
-    <div>
-      <Meta data={meta} />
-      <Header />
-      <FeaturedPosts posts={edges} />
-    </div>
-  );
-}
-
-export const query = graphql`
-  query featuredPosts {
-    allMarkdownRemark(
-      limit: 3
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            path
-            date
-            _PARENT
-            parent
-          }
-        }
-      }
-    }
-  }
-`;
+export default IndexPage;
