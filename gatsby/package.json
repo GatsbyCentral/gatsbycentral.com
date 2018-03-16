@@ -6,7 +6,7 @@
     "classnames": "^2.2.5",
     "gatsby": "~1.9.45",
     "gatsby-image": "^1.0.40",
-    "gatsby-jay": "^0.1.2",
+    "gatsby-jay": "^0.2.1",
     "gatsby-link": "~1.6.17",
     "gatsby-plugin-catch-links": "~1.0.1",
     "gatsby-plugin-google-analytics": "^1.0.8",
