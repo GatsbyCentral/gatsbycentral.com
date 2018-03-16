@@ -11,7 +11,10 @@ export default function Template({ data, pathContext }) {
       <Meta data={{ ...frontmatter, description: excerpt }} />
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <Link to="/">Home</Link>
+      <p>
+        <em>Last updated: {frontmatter.date}</em>
+      </p>
+      <Link to="/posts">All Posts</Link>
     </div>
   );
 }
