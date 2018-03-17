@@ -15,11 +15,11 @@ export default () => injectGlobal`
     padding: 0;
     a {
       color: rgb(102, 102, 102);
-      text-decoration: dotted;
       border-bottom: 1px dotted #666;
     }
     a:hover{
       color: #6bd4c8;
+      border-bottom: none;
     }
     h1,h2,h3,h4,h5{font-weight: 300;font-stretch: 100%}
     h1 {font-size: 2.2rem}
