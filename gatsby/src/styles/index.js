@@ -15,6 +15,7 @@ export default () => injectGlobal`
     padding: 0;
     a {
       color: rgb(102, 102, 102);
+      text-decoration: none;
       border-bottom: 1px dotted #666;
     }
     a:hover{
