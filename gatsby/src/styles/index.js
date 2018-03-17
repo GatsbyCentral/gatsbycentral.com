@@ -1,7 +1,7 @@
 import styledNormalize from "styled-normalize";
 import { injectGlobal } from "styled-components";
 
-export default () => injectGlobal`
+injectGlobal`
   ${styledNormalize}
 
   @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
