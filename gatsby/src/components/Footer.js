@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Twitter from "images/twitter.svg";
+import Facebook from "images/facebook.svg";
+import Github from "images/github.svg";
 
 import Container from "components/Layout/Container";
 
@@ -44,30 +47,18 @@ const Footer = props => {
         <Right>
           <List>
             <Item>
-              <a
-                href="https://twitter.com/gatsbycentral"
-                className="icon alt fa-twitter"
-                target="_blank"
-              >
-                <span className="label">Twitter</span>
+              <a href="https://twitter.com/gatsbycentral" target="_blank">
+                <Twitter style={{ width: "2em", height: "2em" }} />
               </a>
             </Item>
             <Item>
-              <a
-                href="https://www.facebook.com/gatsbycentral/"
-                className="icon alt fa-facebook"
-                target="_blank"
-              >
-                <span className="label">Facebook</span>
+              <a href="https://www.facebook.com/gatsbycentral/" target="_blank">
+                <Facebook style={{ width: "2em", height: "2em" }} />
               </a>
             </Item>
             <Item>
-              <a
-                href="https://github.com/gatsbycentral"
-                className="icon alt fa-github"
-                target="_blank"
-              >
-                <span className="label">GitHub</span>
+              <a href="https://github.com/gatsbycentral" target="_blank">
+                <Github style={{ width: "2em", height: "2em" }} />
               </a>
             </Item>
           </List>
