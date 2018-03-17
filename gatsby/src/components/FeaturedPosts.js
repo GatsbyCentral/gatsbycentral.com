@@ -11,6 +11,9 @@ const Posts = styled.div`
   text-align: center;
   font-size: 2rem;
   line-height: 4rem;
+  a {
+    color: rgb(102, 102, 102);
+  }
 `;
 
 const renderPosts = map(post => (

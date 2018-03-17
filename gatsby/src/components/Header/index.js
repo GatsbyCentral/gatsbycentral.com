@@ -1,5 +1,10 @@
 import React from "react";
 import Link from "gatsby-link";
+import styled from "styled-components";
+
+const Item = styled(Link)`
+  color: white;
+`;
 
 const Header = () => (
   <div
@@ -16,15 +21,7 @@ const Header = () => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: "white",
-            textDecoration: "none"
-          }}
-        >
-          Gatsby Central
-        </Link>
+        <Item to="/">Gatsby Central</Item>
       </h1>
     </div>
   </div>

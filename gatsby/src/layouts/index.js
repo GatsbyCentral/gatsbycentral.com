@@ -1,34 +1,37 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import theme from "../styles/theme.js";
+import { default as BasicContainer } from "components/Layout/Container";
+import MainMenu from "components/Menu/MainMenu";
+import Footer from "components/Footer";
 
-import Header from "../components/Header";
+import "./index.css";
+// Import the prismjs theme for syntax highlighting in markdown
+import "prismjs/themes/prism-coy.css";
+import baseStyles from "styles/index";
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: "0 auto",
-        maxWidth: 960,
-        padding: "0px 1.0875rem 1.45rem",
-        paddingTop: 0
-      }}
-    >
-      {children()}
-    </div>
-  </div>
-);
+const Wrapper = styled.div`
+  height: 100%;
+`;
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
+const Container = BasicContainer.extend`
+  min-height: 100%;
+`;
+
+const Layout = props => {
+  baseStyles();
+  return (
+    <ThemeProvider theme={theme}>
+      <Wrapper>
+        <MainMenu />
+        <Container>
+          <div>{props.children()}</div>
+        </Container>
+        <Footer />
+      </Wrapper>
+    </ThemeProvider>
+  );
 };
 
-export default TemplateWrapper;
+export default Layout;

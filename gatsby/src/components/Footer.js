@@ -10,10 +10,27 @@ const Wrapper = styled.div`
   padding: 1rem;
 `;
 
-const Link = styled.a``;
+const Link = styled.a`
+  color: white;
+  text-decoration: none;
+`;
 
 const Right = styled.div`
   float: right;
+`;
+
+const List = styled.ul`
+  display: inline;
+  list-style-type: none;
+`;
+
+const Item = styled.li`
+  display: inline;
+  margin-right: 1rem;
+  color: white;
+  a {
+    color: white;
+  }
 `;
 
 const Footer = props => {
@@ -25,8 +42,8 @@ const Footer = props => {
           superlumen.io
         </Link>
         <Right>
-          <ul className="icons">
-            <li>
+          <List>
+            <Item>
               <a
                 href="https://twitter.com/gatsbycentral"
                 className="icon alt fa-twitter"
@@ -34,8 +51,8 @@ const Footer = props => {
               >
                 <span className="label">Twitter</span>
               </a>
-            </li>
-            <li>
+            </Item>
+            <Item>
               <a
                 href="https://www.facebook.com/gatsbycentral/"
                 className="icon alt fa-facebook"
@@ -43,8 +60,8 @@ const Footer = props => {
               >
                 <span className="label">Facebook</span>
               </a>
-            </li>
-            <li>
+            </Item>
+            <Item>
               <a
                 href="https://github.com/gatsbycentral"
                 className="icon alt fa-github"
@@ -52,8 +69,8 @@ const Footer = props => {
               >
                 <span className="label">GitHub</span>
               </a>
-            </li>
-          </ul>
+            </Item>
+          </List>
         </Right>
       </Container>
     </Wrapper>
