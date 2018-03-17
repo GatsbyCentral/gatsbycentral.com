@@ -2,6 +2,8 @@ import React from "react";
 import Meta from "components/Meta/Meta";
 import Link from "gatsby-link";
 
+import SubscribeForm from "components/SubscribeForm";
+
 export default function Template({ data, pathContext }) {
   const { markdownRemark } = data;
   const { frontmatter, html, excerpt } = markdownRemark;
@@ -15,6 +17,7 @@ export default function Template({ data, pathContext }) {
         <em>Last updated: {frontmatter.date}</em>
       </p>
       <Link to="/posts">All Posts</Link>
+      <SubscribeForm />
     </div>
   );
 }
