@@ -13,6 +13,12 @@ module.exports = {
     "gatsby-plugin-react-next",
     "gatsby-plugin-catch-links",
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",

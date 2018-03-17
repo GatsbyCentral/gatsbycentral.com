@@ -2,9 +2,16 @@ import Typography from "typography";
 
 const typography = new Typography({
   baseFontSize: "18px",
+  baseLineHeight: 1.5,
   scaleRatio: 1.5,
+  googleFonts: [
+    {
+      name: "Source Sans Pro",
+      styles: ["300", "300i"]
+    }
+  ],
   headerFontFamily: [
-    "Avenir Next",
+    "Source Sans Pro",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
@@ -12,15 +19,17 @@ const typography = new Typography({
     "sans-serif"
   ],
   bodyFontFamily: [
-    "Avenir Next",
+    "Source Sans Pro",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
     "Arial",
     "sans-serif"
   ],
-  headerColor: "hsla(0,0%,0%,0.755555)",
-  bodyColor: "hsla(0,0%,0%,0.65)"
+  headerColor: "hsla(0,0%,0%,0.6)",
+  bodyColor: "hsla(0,0%,0%,0.60)",
+  headerWeight: 300,
+  bodyWeight: 300
 });
 
 export default typography;
