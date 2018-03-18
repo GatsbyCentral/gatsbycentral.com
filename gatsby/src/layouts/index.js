@@ -9,7 +9,6 @@ import Footer from "components/Footer";
 import "./index.css";
 // Import the prismjs theme for syntax highlighting in markdown
 import "prismjs/themes/prism-coy.css";
-import "styles/index";
 
 const Wrapper = styled.div`
   height: 100%;

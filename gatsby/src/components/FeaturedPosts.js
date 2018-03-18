@@ -12,7 +12,7 @@ const Posts = styled.div`
   font-size: 2rem;
   line-height: 4rem;
   a {
-    color: rgb(102, 102, 102);
+    //color: rgb(102, 102, 102);
   }
 `;
 
