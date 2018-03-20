@@ -3,6 +3,7 @@ const { name } = require("./package.json");
 module.exports = {
   pathPrefix: process.env.CI ? `/${name}` : `/`,
   siteMetadata: {
+    siteUrl: "https://www.gatsbycentral.com",
     author: "superlumen.io",
     title: `Gatsby Central`
   },
