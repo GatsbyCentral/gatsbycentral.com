@@ -12,7 +12,10 @@ const Element = styled.div`
   padding-top: 1rem;
 `;
 
-const Content = styled.div``;
+const Content = styled.div`
+  max-width: 900px;
+  margin: auto;
+`;
 
 const Link = styled.a`
   color: white;
