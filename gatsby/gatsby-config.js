@@ -39,7 +39,7 @@ module.exports = {
         dir: `${__dirname}/src/images`, // only process this directory
         // svgr options
         icon: true,
-        viewBox: false
+        viewBox: true
         // see https://github.com/smooth-code/svgr for a list of all options
       }
     },

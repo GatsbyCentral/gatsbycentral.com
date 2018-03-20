@@ -35,8 +35,14 @@ const Item = styled.li`
   display: inline;
   margin-right: 1rem;
   color: white;
+  width: 1.5rem;
+  height: 1.5rem;
   a {
     color: white;
+    svg {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
   }
 `;
 
@@ -52,17 +58,17 @@ const Footer = props => {
           <List>
             <Item>
               <a href="https://twitter.com/gatsbycentral" target="_blank">
-                <Twitter style={{ width: "2em", height: "2em" }} />
+                <Twitter />
               </a>
             </Item>
             <Item>
               <a href="https://www.facebook.com/gatsbycentral/" target="_blank">
-                <Facebook style={{ width: "2em", height: "2em" }} />
+                <Facebook />
               </a>
             </Item>
             <Item>
               <a href="https://github.com/gatsbycentral" target="_blank">
-                <Github style={{ width: "2em", height: "2em" }} />
+                <Github />
               </a>
             </Item>
           </List>
