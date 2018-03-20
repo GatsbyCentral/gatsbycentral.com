@@ -18,8 +18,8 @@ export default function Template({ data, pathContext }) {
       <p>
         <em>Last updated: {frontmatter.date}</em>
       </p>
-      <Link to="/posts">All Posts</Link>
       <SubscribeForm />
+      <Link to="/posts">All Posts</Link>
     </Container>
   );
 }
