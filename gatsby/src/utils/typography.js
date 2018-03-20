@@ -32,6 +32,7 @@ const typography = new Typography({
   bodyWeight: 300,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
     return {
+      body: {},
       a: {
         color: "hsla(0,0%,0%,0.6)",
         textDecoration: "none",

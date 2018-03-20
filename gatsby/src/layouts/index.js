@@ -11,7 +11,9 @@ import "./index.css";
 import "prismjs/themes/prism-coy.css";
 
 const Wrapper = styled.div`
-  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 `;
 
 const Container = BasicContainer.extend`
@@ -26,7 +28,7 @@ const Layout = props => {
       <Wrapper>
         <MainMenu />
         <Container>
-          <div>{props.children()}</div>
+          <div style={{ flex: 1 }}>{props.children()}</div>
         </Container>
         <Footer />
       </Wrapper>

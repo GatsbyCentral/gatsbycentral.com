@@ -4,14 +4,15 @@ import Twitter from "images/twitter.svg";
 import Facebook from "images/facebook.svg";
 import Github from "images/github.svg";
 
-import Container from "components/Layout/Container";
-
-const Wrapper = styled.div`
+const Element = styled.div`
   margin-top: 2rem;
   color: white;
   background-color: ${({ theme }) => theme.secondaryColor};
-  padding: 1rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
 `;
+
+const Content = styled.div``;
 
 const Link = styled.a`
   color: white;
@@ -38,8 +39,8 @@ const Item = styled.li`
 
 const Footer = props => {
   return (
-    <Wrapper>
-      <Container>
+    <Element>
+      <Content>
         &copy;{" "}
         <Link href="https://superlumen.io" target="_blank">
           superlumen.io
@@ -63,8 +64,8 @@ const Footer = props => {
             </Item>
           </List>
         </Right>
-      </Container>
-    </Wrapper>
+      </Content>
+    </Element>
   );
 };
 
