@@ -33,7 +33,7 @@ const SubscribeForm = props => {
       method="post"
       target="_blank"
     >
-      <Label>Sign up to our newsletter</Label>
+      <Label>Get the latest Gatsby tips straight to your inbox</Label>
       <Input
         type="email"
         name="EMAIL"
