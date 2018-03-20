@@ -15,6 +15,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = BasicContainer.extend`
+  max-width: 600px;
+  margin: auto;
   min-height: 100%;
 `;
 
