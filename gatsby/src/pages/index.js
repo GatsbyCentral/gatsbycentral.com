@@ -2,7 +2,8 @@ import React from "react";
 import Meta from "components/Meta/Meta";
 
 import FeaturedPosts from "components/FeaturedPosts";
-import Header from "../components/Header";
+import Header from "components/Header";
+import Container from "components/Container";
 
 // SEO meta data for the homepage.
 const meta = {
@@ -13,11 +14,11 @@ const meta = {
 
 export default function Index({ data: { allMarkdownRemark: { edges } } }) {
   return (
-    <div>
+    <Container>
       <Meta data={meta} />
       <Header />
       <FeaturedPosts posts={edges} />
-    </div>
+    </Container>
   );
 }
 
