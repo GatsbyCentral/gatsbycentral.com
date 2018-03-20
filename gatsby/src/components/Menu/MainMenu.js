@@ -29,7 +29,7 @@ const MainMenu = () => {
           <Link to="/">Gatsby Central</Link>
         </MenuItem>
         <MenuItem>
-          <Link to="posts">All Posts</Link>
+          <Link to="/posts">All Posts</Link>
         </MenuItem>
       </Container>
     </Wrapper>
