@@ -4,13 +4,17 @@ import Twitter from "images/twitter.svg";
 import Facebook from "images/facebook.svg";
 import Github from "images/github.svg";
 
-import Container from "components/Layout/Container";
-
-const Wrapper = styled.div`
+const Element = styled.div`
   margin-top: 2rem;
   color: white;
   background-color: ${({ theme }) => theme.secondaryColor};
-  padding: 1rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+`;
+
+const Content = styled.div`
+  max-width: 900px;
+  margin: auto;
 `;
 
 const Link = styled.a`
@@ -31,15 +35,21 @@ const Item = styled.li`
   display: inline;
   margin-right: 1rem;
   color: white;
+  width: 1.5rem;
+  height: 1.5rem;
   a {
     color: white;
+    svg {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
   }
 `;
 
 const Footer = props => {
   return (
-    <Wrapper>
-      <Container>
+    <Element>
+      <Content>
         &copy;{" "}
         <Link href="https://superlumen.io" target="_blank">
           superlumen.io
@@ -48,23 +58,23 @@ const Footer = props => {
           <List>
             <Item>
               <a href="https://twitter.com/gatsbycentral" target="_blank">
-                <Twitter style={{ width: "2em", height: "2em" }} />
+                <Twitter />
               </a>
             </Item>
             <Item>
               <a href="https://www.facebook.com/gatsbycentral/" target="_blank">
-                <Facebook style={{ width: "2em", height: "2em" }} />
+                <Facebook />
               </a>
             </Item>
             <Item>
               <a href="https://github.com/gatsbycentral" target="_blank">
-                <Github style={{ width: "2em", height: "2em" }} />
+                <Github />
               </a>
             </Item>
           </List>
         </Right>
-      </Container>
-    </Wrapper>
+      </Content>
+    </Element>
   );
 };
 
