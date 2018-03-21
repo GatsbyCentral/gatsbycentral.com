@@ -26,7 +26,19 @@ const FeaturedPosts = props => {
   return (
     <div>
       <Title>Get Started</Title>
-      <Posts>{renderPosts(props.posts)}</Posts>
+      <Posts>
+        <div>
+          <Link to="/what-is-gatsby-exactly">What is Gatsby exactly?</Link>
+        </div>
+        <div>
+          <Link to="/introduction-to-gatsby-data-flow">
+            Introduction to Gatsby data flow
+          </Link>
+        </div>
+        <div>
+          <Link to="/meta-tags-in-gatsby">Meta Tags in Gatsby</Link>
+        </div>
+      </Posts>
     </div>
   );
 };

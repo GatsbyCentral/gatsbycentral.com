@@ -17,29 +17,7 @@ export default function Index({ data: { allMarkdownRemark: { edges } } }) {
     <Container>
       <Meta data={meta} />
       <Header />
-      <FeaturedPosts posts={edges} />
+      <FeaturedPosts />
     </Container>
   );
 }
-
-export const query = graphql`
-  query featuredPosts {
-    allMarkdownRemark(
-      limit: 3
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            path
-            date
-            _PARENT
-            parent
-          }
-        }
-      }
-    }
-  }
-`;
