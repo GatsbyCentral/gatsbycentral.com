@@ -12,7 +12,7 @@ const meta = {
   description: "The Community for Gatsby Developers"
 };
 
-export default function Index({ data: { allMarkdownRemark: { edges } } }) {
+export default function Index(props) {
   return (
     <Container>
       <Meta data={meta} />
