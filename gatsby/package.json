@@ -4,7 +4,7 @@
   "author": "superlumen.io",
   "dependencies": {
     "classnames": "^2.2.5",
-    "gatsby": "~1.9.45",
+    "gatsby": "^1.9.239",
     "gatsby-image": "^1.0.40",
     "gatsby-jay": "^0.2.1",
     "gatsby-link": "~1.6.17",
