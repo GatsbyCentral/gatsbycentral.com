@@ -1,6 +1,6 @@
 ---
-path: "/video-introduction-to-gatsby"
-title: "Video: Introduction to Gatsby"
+path: "/video-intro-to-gatsby"
+title: "Video: Intro to Gatsby"
 date: "2018-03-27"
 ---
 
