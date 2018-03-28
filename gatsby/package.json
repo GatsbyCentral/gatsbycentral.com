@@ -16,6 +16,7 @@
     "gatsby-plugin-resolve-src": "^1.0.0",
     "gatsby-plugin-sass": "^1.0.14",
     "gatsby-plugin-sharp": "~1.6.8",
+    "gatsby-plugin-sitemap": "^1.2.20",
     "gatsby-plugin-styled-components": "^2.0.8",
     "gatsby-plugin-svgr": "^0.2.1",
     "gatsby-plugin-typography": "^1.7.18",
