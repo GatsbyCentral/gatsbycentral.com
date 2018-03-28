@@ -66,6 +66,12 @@ module.exports = {
               height: 400
             }
           },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank"
+            }
+          },
           `gatsby-remark-responsive-iframe`
         ]
       }

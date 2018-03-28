@@ -20,6 +20,7 @@
     "gatsby-plugin-svgr": "^0.2.1",
     "gatsby-plugin-typography": "^1.7.18",
     "gatsby-remark-embed-youtube": "^0.0.7",
+    "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "~1.5.13",
     "gatsby-remark-prismjs": "^1.2.18",
     "gatsby-remark-responsive-iframe": "^1.4.18",
