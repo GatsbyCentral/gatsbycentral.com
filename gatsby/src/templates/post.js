@@ -4,14 +4,14 @@ import Link from "gatsby-link";
 
 import SubscribeForm from "components/SubscribeForm";
 
-import Container from "components/Container";
+import Content from "components/Layout/Content";
 
 export default function Template({ data, pathContext }) {
   const { markdownRemark } = data;
   const { frontmatter, html, excerpt } = markdownRemark;
 
   return (
-    <Container>
+    <Content>
       <Meta data={{ ...frontmatter, description: excerpt }} />
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -20,7 +20,7 @@ export default function Template({ data, pathContext }) {
       </p>
       <SubscribeForm />
       <Link to="/posts">All Posts</Link>
-    </Container>
+    </Content>
   );
 }
 

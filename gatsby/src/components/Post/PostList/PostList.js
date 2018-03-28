@@ -1,9 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import { map } from "ramda";
 
 import PostListItem from "./components/PostListItem";
-import Container from "components/Container";
+import Container from "components/Layout/Container";
 
 const renderPosts = map(post => <PostListItem item={post} />);
 

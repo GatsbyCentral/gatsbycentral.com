@@ -3,7 +3,7 @@ import Meta from "components/Meta/Meta";
 
 import FeaturedPosts from "components/FeaturedPosts";
 import Header from "components/Header";
-import Container from "components/Container";
+import Container from "components/Layout/Container";
 
 // SEO meta data for the homepage.
 const meta = {
