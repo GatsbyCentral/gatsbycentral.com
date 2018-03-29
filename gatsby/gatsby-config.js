@@ -58,7 +58,21 @@ module.exports = {
             options: {
               classPrefix: "language-"
             }
-          }
+          },
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400
+            }
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank"
+            }
+          },
+          `gatsby-remark-responsive-iframe`
         ]
       }
     },
