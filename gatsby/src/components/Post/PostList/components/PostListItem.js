@@ -1,14 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "gatsby-link";
+import BasicLink from "components/Style/Elements/Link.js";
 
-const Element = styled.div``;
+const Element = styled.div`
+  margin-bottom: 0.5rem;
+`;
+const Link = BasicLink.extend`
+  font-size: 1.2rem;
+`;
 
 const PostListItem = ({ item }) => {
   const { node: post } = item;
   return (
-    <Element key={post.id}>
-      <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>{" "}
+    <Element>
+      <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
     </Element>
   );
 };

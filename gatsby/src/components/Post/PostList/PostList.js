@@ -4,7 +4,9 @@ import { map } from "ramda";
 import PostListItem from "./components/PostListItem";
 import Container from "components/Layout/Container";
 
-const renderPosts = map(post => <PostListItem item={post} />);
+const renderPosts = map(post => (
+  <PostListItem item={post} key={post.node.id} />
+));
 
 const PostList = ({ posts }) => {
   return <Container>{renderPosts(posts)}</Container>;
