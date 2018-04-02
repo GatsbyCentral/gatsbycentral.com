@@ -4,7 +4,6 @@ import logo from "images/gc-logo.png";
 
 const Meta = props => {
   const { data } = props;
-  console.log(data);
 
   // Default values
   const title = data.title || "Gatsby Central";
@@ -21,7 +20,7 @@ const Meta = props => {
   ];
 
   if (data) {
-    schemaOrgJSONLD.push[
+    schemaOrgJSONLD.push([
       {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -34,8 +33,9 @@ const Meta = props => {
         // },
         description: data.description
       }
-    ];
+    ]);
   }
+  console.log(schemaOrgJSONLD);
 
   return (
     <Helmet titleTemplate="%s | Gatsby Central" defaultTitle="Gatsby Central">
