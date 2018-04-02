@@ -4,7 +4,7 @@ import logo from "images/gc-logo.png";
 
 const Meta = props => {
   const { data, rich = false } = props;
-
+  console.log(data);
   // Default values
   const title = data.title || "Gatsby Central";
   const path = data.path || "";
@@ -24,11 +24,11 @@ const Meta = props => {
       url: rootUrl + `/${path}`,
       name: title,
       headline: title,
-      description: data.description
+      description: data.description,
+      datePublished: data.date,
+      image: rootUrl + logo
     };
   }
-
-  console.log(schemaOrgJSONLD);
 
   return (
     <Helmet titleTemplate="%s | Gatsby Central" defaultTitle="Gatsby Central">
