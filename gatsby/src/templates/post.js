@@ -12,7 +12,7 @@ export default function Template({ data, pathContext }) {
 
   return (
     <Content>
-      <Meta data={{ ...frontmatter, description: excerpt }} />
+      <Meta data={{ ...frontmatter, description: excerpt }} rich />
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <p>
