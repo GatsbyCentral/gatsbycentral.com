@@ -4,7 +4,6 @@ import logo from "images/gc-logo.png";
 
 const Meta = props => {
   const { data, rich = false } = props;
-  console.log(data);
   // Default values
   const title = data.title || "Gatsby Central";
   const path = data.path || "";
@@ -45,8 +44,8 @@ const Meta = props => {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@GatsbyCentral" />
       <meta name="twitter:image" content={logo} />
-      <link rel="canonical" href={`https://www.gatsbycentral.com${path}`} />
-      <link rel="image_src" href={logo} />
+      <link rel="canonical" href={`${rootUrl}${path}`} />
+      <link rel="image_src" href={`${rootUrl}${logo}`} />
     </Helmet>
   );
 };
