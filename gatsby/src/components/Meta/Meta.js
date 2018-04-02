@@ -4,12 +4,44 @@ import logo from "images/gc-logo.png";
 
 const Meta = props => {
   const { data } = props;
+  console.log(data);
 
+  // Default values
   const title = data.title || "Gatsby Central";
   const path = data.path || "";
+  const rootUrl = "https://www.gatsbycentral.com";
+  // schema.org via JSON-LD
+  const schemaOrgJSONLD = [
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      url: rootUrl,
+      name: title
+    }
+  ];
+
+  if (data) {
+    schemaOrgJSONLD.push[
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        url: rootUrl + `/${path}`,
+        name: title,
+        headline: title,
+        // image: {
+        //   "@type": "ImageObject",
+        //   url: image
+        // },
+        description: data.description
+      }
+    ];
+  }
 
   return (
     <Helmet titleTemplate="%s | Gatsby Central" defaultTitle="Gatsby Central">
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgJSONLD)}
+      </script>
       <title>{title}</title>
       <meta name="description" content={data.description} />
       <meta name="keywords" content={title} />
