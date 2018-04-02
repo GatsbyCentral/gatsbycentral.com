@@ -3,38 +3,31 @@ import { Helmet } from "react-helmet";
 import logo from "images/gc-logo.png";
 
 const Meta = props => {
-  const { data } = props;
+  const { data, rich = false } = props;
 
   // Default values
   const title = data.title || "Gatsby Central";
   const path = data.path || "";
   const rootUrl = "https://www.gatsbycentral.com";
   // schema.org via JSON-LD
-  const schemaOrgJSONLD = [
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      url: rootUrl,
-      name: title
-    }
-  ];
+  let schemaOrgJSONLD = {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    url: rootUrl,
+    name: title
+  };
 
-  if (data) {
-    schemaOrgJSONLD.push([
-      {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        url: rootUrl + `/${path}`,
-        name: title,
-        headline: title,
-        // image: {
-        //   "@type": "ImageObject",
-        //   url: image
-        // },
-        description: data.description
-      }
-    ]);
+  if (rich) {
+    schemaOrgJSONLD = {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      url: rootUrl + `/${path}`,
+      name: title,
+      headline: title,
+      description: data.description
+    };
   }
+
   console.log(schemaOrgJSONLD);
 
   return (
