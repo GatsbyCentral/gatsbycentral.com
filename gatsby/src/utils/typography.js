@@ -50,7 +50,7 @@ const typography = new Typography({
         borderBottom: "1px solid"
       },
       blockquote: {
-        borderLeft: "solid 4px hsla(0,0%,56%,.5)",
+        borderLeft: "solid 4px hsla(41,100%,53%,1)",
         fontStyle: "italic",
         margin: "0 0 2rem 0",
         padding: "0.5em 0 0.5em 2em"
