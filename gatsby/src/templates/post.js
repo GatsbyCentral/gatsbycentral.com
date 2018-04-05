@@ -4,7 +4,14 @@ import Link from "gatsby-link";
 
 import SubscribeForm from "components/SubscribeForm";
 
-import Content from "components/Layout/Content";
+import BasicContent from "components/Layout/Content";
+
+const Content = BasicContent.extend`
+  @media (max-width: 900px) {
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 0%, 0.9);
+  }
+`;
 
 export default function Template({ data, pathContext }) {
   const { markdownRemark } = data;
