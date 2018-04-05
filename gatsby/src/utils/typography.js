@@ -42,8 +42,13 @@ const typography = new Typography({
         color: "#6bd4c8",
         borderBottom: "none"
       },
-      h1: { fontSize: "2.2rem" },
-      h2: { fontSize: "2rem" },
+      h1: { fontSize: "3.8rem", color: "#d81e5b" },
+      h2: {
+        fontSize: "2.4rem",
+        fontWeight: 800,
+        color: "#d81e5b",
+        borderBottom: "2px solid"
+      },
       blockquote: {
         borderLeft: "solid 4px hsla(0,0%,56%,.5)",
         fontStyle: "italic",
