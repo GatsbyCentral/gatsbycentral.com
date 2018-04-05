@@ -31,6 +31,7 @@ const Meta = props => {
 
   return (
     <Helmet titleTemplate="%s | Gatsby Central" defaultTitle="Gatsby Central">
+      <html lang="en" />
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgJSONLD)}
       </script>
