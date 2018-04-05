@@ -7,6 +7,7 @@ import MainMenu from "components/Menu/MainMenu";
 const Heading = styled.div`
   text-align: center;
   padding-top: 2rem;
+  margin-bottom: 3rem;
 `;
 
 export default function Header(props) {
@@ -14,7 +15,7 @@ export default function Header(props) {
     <section id="">
       <div className="inner">
         <Heading>
-          <h2>Gatsby Central</h2>
+          <h1>Gatsby Central</h1>
           <p>The community for gatsby developers</p>
         </Heading>
       </div>
