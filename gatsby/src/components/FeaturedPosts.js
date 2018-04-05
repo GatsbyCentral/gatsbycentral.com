@@ -5,6 +5,7 @@ import Link from "gatsby-link";
 
 const Title = styled.h2`
   text-align: center;
+  border: none;
 `;
 
 const Posts = styled.div`

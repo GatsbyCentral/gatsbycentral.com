@@ -42,12 +42,12 @@ const typography = new Typography({
         color: "#6bd4c8",
         borderBottom: "none"
       },
-      h1: { fontSize: "3.8rem", color: "#d81e5b" },
+      h1: { fontSize: "3rem", color: "#d81e5b" },
       h2: {
         fontSize: "2.4rem",
-        fontWeight: 800,
+        fontWeight: 300,
         color: "#d81e5b",
-        borderBottom: "2px solid"
+        borderBottom: "1px solid"
       },
       blockquote: {
         borderLeft: "solid 4px hsla(0,0%,56%,.5)",
@@ -64,6 +64,9 @@ const typography = new Typography({
         margin: "0 0.25em",
         padding: "0.25em 0.65em",
         display: "inline"
+      },
+      'pre[class*="language-"]': {
+        maxWidth: "2px solid black"
       }
     };
   }
