@@ -42,9 +42,9 @@ const typography = new Typography({
         color: "#6bd4c8",
         borderBottom: "none"
       },
-      h1: { fontSize: "3rem", color: "#d81e5b" },
+      h1: { fontSize: "2.5rem", color: "#d81e5b" },
       h2: {
-        fontSize: "2.4rem",
+        fontSize: "2rem",
         fontWeight: 300,
         color: "#d81e5b",
         borderBottom: "1px solid"
