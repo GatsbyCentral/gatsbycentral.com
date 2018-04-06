@@ -3,6 +3,7 @@ import Meta from "components/Meta/Meta";
 import Link from "gatsby-link";
 
 import SubscribeForm from "components/SubscribeForm";
+import Comments from "components/Comment/Comments";
 
 import BasicContent from "components/Layout/Content";
 
@@ -13,8 +14,8 @@ const Content = BasicContent.extend`
   }
 `;
 
-export default function Template({ data, pathContext }) {
-  const { markdownRemark } = data;
+export default function Template({ data }) {
+  const { markdownRemark, allCommentsJson: { edges: comments } } = data;
   const { frontmatter, html, excerpt } = markdownRemark;
 
   return (
@@ -25,6 +26,7 @@ export default function Template({ data, pathContext }) {
       <p>
         <em>Last updated: {frontmatter.date}</em>
       </p>
+      <Comments post={frontmatter.path} comments={comments} />
       <SubscribeForm />
       <Link to="/posts">All Posts</Link>
     </Content>
@@ -40,6 +42,18 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+      }
+    }
+    allCommentsJson(
+      filter: { post: { eq: "how-to-handle-comments-in-gatsby-blogs" } }
+    ) {
+      edges {
+        node {
+          id
+          name
+          message
+          date
+        }
       }
     }
   }
