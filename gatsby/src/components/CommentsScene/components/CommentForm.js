@@ -11,6 +11,8 @@ const Input = styled.input`
   padding: 0.5rem;
   width: 100%;
   line-height: 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(238, 238, 238);
 `;
 
 const Textarea = styled.textarea`
@@ -18,6 +20,7 @@ const Textarea = styled.textarea`
   padding: 0.5rem;
   width: 100%;
   line-height: 2rem;
+  border-color: rgb(238, 238, 238);
 `;
 
 const Button = styled.button`

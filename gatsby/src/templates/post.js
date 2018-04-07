@@ -3,7 +3,7 @@ import Meta from "components/Meta/Meta";
 import Link from "gatsby-link";
 
 import SubscribeForm from "components/SubscribeForm";
-import Comments from "components/Comment/Comments";
+import Comments from "components/CommentsScene/CommentsScene";
 
 import BasicContent from "components/Layout/Content";
 

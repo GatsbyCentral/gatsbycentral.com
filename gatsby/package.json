@@ -28,7 +28,7 @@
     "gatsby-source-filesystem": "~1.5.1",
     "gatsby-transformer-json": "^1.0.16",
     "gatsby-transformer-remark": "~1.7.12",
-    "moment": "^2.20.1",
+    "moment": "^2.22.0",
     "ramda": "^0.25.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
