@@ -34,7 +34,8 @@ const Button = styled.button`
   line-height: 2rem;
 `;
 
-const CommentForm = ({ post }) => {
+// Use the `path` (frontmatter) as the identifier for the post.
+const CommentForm = ({ postId }) => {
   return (
     <Form
       method="POST"
@@ -45,8 +46,8 @@ const CommentForm = ({ post }) => {
         type="hidden"
         value="https://www.gatsbycentral.com"
       />
-      <input name="options[slug]" type="hidden" value={post} />
-      <input name="fields[post]" type="hidden" value={post} />
+      <input name="options[slug]" type="hidden" value={postId} />
+      <input name="fields[post]" type="hidden" value={postId} />
       <label>
         <Input name="fields[name]" type="text" placeholder="Name" required />
       </label>

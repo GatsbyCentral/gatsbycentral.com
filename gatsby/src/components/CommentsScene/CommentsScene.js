@@ -8,12 +8,12 @@ const renderComments = map(comment => (
   <Comment key={comment.node.email} comment={comment} />
 ));
 
-const CommentsScene = ({ post, comments }) => {
+const CommentsScene = ({ postId, comments }) => {
   return (
     <div>
       <h1>Comments</h1>
       {!isNil(comments) ? renderComments(comments.edges) : null}
-      <CommentForm post={post} />
+      <CommentForm postId={postId} />
     </div>
   );
 };
