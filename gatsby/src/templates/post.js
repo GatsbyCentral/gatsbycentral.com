@@ -15,7 +15,8 @@ const Content = BasicContent.extend`
 `;
 
 export default function Template({ data }) {
-  const { markdownRemark, allCommentsJson: { edges: comments } } = data;
+  const { markdownRemark, allCommentsJson: comments } = data;
+  console.log(data);
   const { frontmatter, html, excerpt } = markdownRemark;
 
   return (
@@ -45,7 +46,8 @@ export const pageQuery = graphql`
       }
     }
     allCommentsJson(
-      filter: { post: { eq: "how-to-handle-comments-in-gatsby-blogs" } }
+      filter: { post: { eq: $path } }
+      sort: { fields: [date], order: ASC }
     ) {
       edges {
         node {
