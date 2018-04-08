@@ -7,7 +7,7 @@ const typography = new Typography({
   googleFonts: [
     {
       name: "Source Sans Pro",
-      styles: ["300", "300i"]
+      styles: ["300", "300i", "400", "400i"]
     }
   ],
   headerFontFamily: [
@@ -55,6 +55,7 @@ const typography = new Typography({
         margin: "0 0 2rem 0",
         padding: "0.5em 0 0.5em 2em"
       },
+      strong: { fontWeight: 400 },
       code: {
         background: "rgba(143, 143, 143, 0.075)",
         borderRadius: "0.3rem",
