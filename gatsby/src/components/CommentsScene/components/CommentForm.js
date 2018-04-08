@@ -44,7 +44,7 @@ const CommentForm = ({ postId }) => {
       <input
         name="options[redirect]"
         type="hidden"
-        value="https://www.gatsbycentral.com"
+        value="https://www.gatsbycentral.com/comments/success"
       />
       <input name="options[slug]" type="hidden" value={postId} />
       <input name="fields[post]" type="hidden" value={postId} />
