@@ -20,12 +20,9 @@ const Element = ({ comment: { node: comment } }) => {
   return (
     <Comment>
       <Message>{comment.message}</Message>
-      <Date>
-        {moment()
-          .millisecond(comment.date)
-          .format("LLL")}
-      </Date>{" "}
-      by <Author>{comment.name}</Author>
+      {/* Date is `timestamp-seconds` format. Convert with `moment.unix()` */}
+      <Date>{moment.unix(comment.date).format("LLL")}</Date> by{" "}
+      <Author>{comment.name}</Author>
     </Comment>
   );
 };

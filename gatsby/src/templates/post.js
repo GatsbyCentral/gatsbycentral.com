@@ -16,7 +16,6 @@ const Content = BasicContent.extend`
 
 export default function Template({ data }) {
   const { markdownRemark, allCommentsJson: comments } = data;
-  console.log(data);
   const { frontmatter, html, excerpt } = markdownRemark;
 
   return (

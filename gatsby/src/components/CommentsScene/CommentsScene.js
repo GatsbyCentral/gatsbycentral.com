@@ -9,7 +9,6 @@ const renderComments = map(comment => (
 ));
 
 const CommentsScene = ({ post, comments }) => {
-  console.log(comments);
   return (
     <div>
       <h1>Comments</h1>
