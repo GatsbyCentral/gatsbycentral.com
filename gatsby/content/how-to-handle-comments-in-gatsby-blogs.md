@@ -55,3 +55,5 @@ The possibilities are limitless.
 ## Conclusion
 
 Use [staticman](https://staticman.net/). It's the best all round option. Keep control of your content. If their service goes down, you keep your comments. You can run your own instance later if necessary. It includes support for akismet spam filtering.
+
+**To see staticman in action, leave a comment below!**
