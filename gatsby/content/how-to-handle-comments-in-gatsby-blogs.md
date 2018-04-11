@@ -4,7 +4,7 @@ title: How to handle comments in Gatsby blogs
 date: "2018-04-09"
 ---
 
-> tl;dr Hosted services like diqus are the easiest. Staticman is the best option, but requires some setup.
+> tl;dr Hosted services like disqus are the easiest. Staticman is the best option, but requires some setup.
 
 You have a static site. Or you will have. You understand how the content will work. But what about comments?
 
