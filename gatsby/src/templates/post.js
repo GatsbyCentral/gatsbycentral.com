@@ -26,8 +26,8 @@ export default function Template({ data }) {
       <p>
         <em>Last updated: {frontmatter.date}</em>
       </p>
-      <Comments postId={frontmatter.path} comments={comments} />
       <SubscribeForm />
+      <Comments postId={frontmatter.path} comments={comments} />
       <Link to="/posts">All Posts</Link>
     </Content>
   );
