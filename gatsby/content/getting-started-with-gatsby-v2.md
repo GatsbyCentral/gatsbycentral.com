@@ -75,19 +75,19 @@ git checkout -b gatsby-v2
 First, install the `react` and `react-dom`. They are now peer dependencies. They must go into your `package.json`.
 
 ```
-yarn install react react-dom
+yarn add react react-dom
 ```
 
 Great. Are you using helmet? Probably. If you are, install it. Same as above.
 
 ```
-yarn install react-helmet
+yarn add react-helmet
 ```
 
 Now install Gatsby v2. It's easy.
 
 ```
-yarn install gatsby@next
+yarn add gatsby@next
 ```
 
 You've installed Gatsby v2. Congratulations. Unfortunately, it probably doesn't work yet. Try anyway, just for fun!
@@ -99,7 +99,7 @@ gatsby develop
 Errors? You probably need to update some other Gatsby packges. It's hard to know exactly which ones. Are you using the filesystem source plugin? Probably. Update it.
 
 ```
-yarn install gatsby-source-filesystem@next
+yarn add gatsby-source-filesystem@next
 ```
 
 ## Errors
