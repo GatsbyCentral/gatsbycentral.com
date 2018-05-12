@@ -5,6 +5,7 @@ import theme from "../styles/theme.js";
 import MainMenu from "components/Menu/MainMenu";
 import Footer from "components/Footer";
 
+import "typeface-source-sans-pro"
 import "./index.css";
 // Import the prismjs theme for syntax highlighting in markdown
 import "prismjs/themes/prism-coy.css";

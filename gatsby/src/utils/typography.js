@@ -4,12 +4,12 @@ const typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: 1.5,
   scaleRatio: 1.5,
-  googleFonts: [
-    {
-      name: "Source Sans Pro",
-      styles: ["300", "300i", "400", "400i"]
-    }
-  ],
+  // googleFonts: [
+  //   {
+  //     name: "Source Sans Pro",
+  //     styles: ["300", "300i", "400", "400i"]
+  //   }
+  // ],
   headerFontFamily: [
     "Source Sans Pro",
     "Helvetica Neue",
