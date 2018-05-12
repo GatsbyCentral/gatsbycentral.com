@@ -39,7 +39,7 @@ const CommentForm = ({ postId }) => {
   return (
     <Form
       method="POST"
-      action="https://api.staticman.net/v2/entry/GatsbyCentral/gatsbycentral.com/comments/comments"
+      action="https://api.staticman.net/v2/entry/GatsbyCentral/gatsbycentral.com/master/comments"
     >
       <input
         name="options[redirect]"
