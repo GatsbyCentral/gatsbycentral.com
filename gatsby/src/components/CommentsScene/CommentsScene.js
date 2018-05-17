@@ -1,5 +1,6 @@
 import React from "react";
 import { map, isNil } from "ramda";
+import { H1 } from "../Style/Headings/H1";
 
 import CommentForm from "./components/CommentForm";
 import Comment from "./components/Comment";
@@ -11,7 +12,7 @@ const renderComments = map(comment => (
 const CommentsScene = ({ postId, comments }) => {
   return (
     <div>
-      <h1>Comments</h1>
+      <H1>Comments</H1>
       {!isNil(comments) ? renderComments(comments.edges) : null}
       <CommentForm postId={postId} />
     </div>

@@ -4,9 +4,9 @@ import moment from "moment";
 
 const Comment = styled.div`
   border-bottom: 1px solid silver;
-  padding: 1rem 0;
   font-size: 0.75rem;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
 `;
 const Message = styled.div`
   font-size: 1rem;
