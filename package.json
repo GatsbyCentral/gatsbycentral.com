@@ -4,5 +4,8 @@
   "version": "1.0.0",
   "author": "superlumen.io",
   "keywords": ["gatsby"],
+  "scripts": {
+    "start": "cd gatsby && gatsby develop"
+  },
   "license": "MIT"
 }
