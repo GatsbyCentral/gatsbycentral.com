@@ -51,10 +51,7 @@ const Footer = props => {
   return (
     <Element>
       <Content>
-        &copy;{" "}
-        <Link href="https://superlumen.io" target="_blank">
-          superlumen.io
-        </Link>
+        &copy; chmac Ltd - <Link href="/privacy">Privacy</Link>
         <Right>
           <List>
             <Item>
