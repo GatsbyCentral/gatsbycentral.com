@@ -5,7 +5,7 @@ import logo from "images/gc-logo.png";
 const Meta = props => {
   const { data, rich = false } = props;
   // Default values
-  const title = data.title || "Gatsby Central";
+  const title = data.title || null;
   const path = data.path || "";
   const rootUrl = "https://www.gatsbycentral.com";
   // schema.org via JSON-LD

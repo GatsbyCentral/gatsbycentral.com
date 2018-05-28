@@ -1,10 +1,10 @@
 ---
 path: "/how-to-handle-comments-in-gatsby-blogs"
 title: How to handle comments in Gatsby blogs
-date: "2018-04-06"
+date: "2018-04-09"
 ---
 
-> tl;dr Hosted services like diqus are the easiest. Staticman is the best option, but requires some setup.
+> tl;dr Hosted services like disqus are the easiest. Staticman is the best option, but requires some setup.
 
 You have a static site. Or you will have. You understand how the content will work. But what about comments?
 
@@ -55,3 +55,5 @@ The possibilities are limitless.
 ## Conclusion
 
 Use [staticman](https://staticman.net/). It's the best all round option. Keep control of your content. If their service goes down, you keep your comments. You can run your own instance later if necessary. It includes support for akismet spam filtering.
+
+**To see staticman in action, leave a comment below!**

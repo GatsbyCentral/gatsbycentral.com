@@ -1,0 +1,1 @@
+{"_id":"8b135c90-55df-11e8-9ca2-03d586cce74d","post":"/getting-started-with-gatsby-v2","name":"skube","email":"0a577c41cde30752036471c926d94515","message":"So if `gatsby-plugin-sass` is an example of a plugin whose @next tag is out of date, should one just:\r\n `yarn add gatsby-plugin-sass` (instead of appending `@next`)?","date":1526127923,"timestamp":1526127923,"tags":[]}

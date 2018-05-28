@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Twitter from "images/twitter.svg";
 import Facebook from "images/facebook.svg";
 import Github from "images/github.svg";
+import Meetup from "images/meetup.svg";
 
 const Element = styled.div`
   margin-top: 2rem;
@@ -69,6 +70,11 @@ const Footer = props => {
             <Item>
               <a href="https://github.com/gatsbycentral" target="_blank">
                 <Github />
+              </a>
+            </Item>
+            <Item>
+              <a href="https://www.meetup.com/gatsbyjs/" target="_blank">
+                <Meetup />
               </a>
             </Item>
           </List>

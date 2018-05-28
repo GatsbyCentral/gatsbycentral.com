@@ -34,6 +34,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "comments",
+        path: `${__dirname}/_data/comments/`
+      }
+    },
+    {
       resolve: "gatsby-plugin-svgr",
       options: {
         dir: `${__dirname}/src/images`, // only process this directory
@@ -76,6 +83,7 @@ module.exports = {
         ]
       }
     },
+    "gatsby-transformer-json",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-sitemap"

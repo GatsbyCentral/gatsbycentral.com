@@ -4,12 +4,12 @@ const typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: 1.5,
   scaleRatio: 1.5,
-  googleFonts: [
-    {
-      name: "Source Sans Pro",
-      styles: ["300", "300i"]
-    }
-  ],
+  // googleFonts: [
+  //   {
+  //     name: "Source Sans Pro",
+  //     styles: ["300", "300i", "400", "400i"]
+  //   }
+  // ],
   headerFontFamily: [
     "Source Sans Pro",
     "Helvetica Neue",
@@ -42,12 +42,13 @@ const typography = new Typography({
         color: "#6bd4c8",
         borderBottom: "none"
       },
-      h1: { fontSize: "2.5rem", color: "#d81e5b" },
+      h1: { fontSize: "2.5rem", color: "#d81e5b", marginBottom: "1rem" },
       h2: {
         fontSize: "2rem",
         fontWeight: 300,
         color: "#d81e5b",
-        borderBottom: "1px solid"
+        borderBottom: "1px solid",
+        marginBottom: "1rem"
       },
       blockquote: {
         borderLeft: "solid 4px hsla(41,100%,53%,1)",
@@ -55,6 +56,7 @@ const typography = new Typography({
         margin: "0 0 2rem 0",
         padding: "0.5em 0 0.5em 2em"
       },
+      strong: { fontWeight: 400 },
       code: {
         background: "rgba(143, 143, 143, 0.075)",
         borderRadius: "0.3rem",

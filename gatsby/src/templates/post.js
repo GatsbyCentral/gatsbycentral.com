@@ -3,6 +3,7 @@ import Meta from "components/Meta/Meta";
 import Link from "gatsby-link";
 
 import SubscribeForm from "components/SubscribeForm";
+import Comments from "components/CommentsScene/CommentsScene";
 
 import BasicContent from "components/Layout/Content";
 
@@ -13,8 +14,8 @@ const Content = BasicContent.extend`
   }
 `;
 
-export default function Template({ data, pathContext }) {
-  const { markdownRemark } = data;
+export default function Template({ data }) {
+  const { markdownRemark, allCommentsJson: comments } = data;
   const { frontmatter, html, excerpt } = markdownRemark;
 
   return (
@@ -26,6 +27,7 @@ export default function Template({ data, pathContext }) {
         <em>Last updated: {frontmatter.date}</em>
       </p>
       <SubscribeForm />
+      <Comments postId={frontmatter.path} comments={comments} />
       <Link to="/posts">All Posts</Link>
     </Content>
   );
@@ -40,6 +42,19 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+      }
+    }
+    allCommentsJson(
+      filter: { post: { eq: $path } }
+      sort: { fields: [date], order: ASC }
+    ) {
+      edges {
+        node {
+          id
+          name
+          message
+          date
+        }
       }
     }
   }
