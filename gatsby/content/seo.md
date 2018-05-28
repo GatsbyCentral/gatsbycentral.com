@@ -1,7 +1,7 @@
 ---
 path: "/seo"
 title: Gatsby SEO
-date: "2018-05-28"
+date: "2018-05-27"
 ---
 You've got a Gatsby site. What do you do about SEO? React and SEO are tricky, how does Gatsby hold up? What other SEO considerations are there in Gatsby?
 
