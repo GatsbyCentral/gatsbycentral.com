@@ -41,6 +41,14 @@ const Privacy = () => {
         delete your entire history on MaiChimp at any time, contact
         callum@superlumen.io and we’ll do that.
       </p>
+      <p>We’ll email you about:</p>
+      <ul>
+        <li>New articles we think you will be interested in reading.</li>
+        <li>
+          Products that we think you will be interested in learning about.
+        </li>
+      </ul>
+      <p>We won’t sell or rent your data to anyone else.</p>
       <p>
         Feel free to read MailChimp’s{" "}
         <a href="https://mailchimp.com/legal/privacy/" target="_blank">
