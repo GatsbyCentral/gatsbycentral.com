@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "gatsby-link";
 
 const Form = styled.form`
   width: 100%;
@@ -29,11 +30,29 @@ const Input = styled.input`
 const SubscribeForm = props => {
   return (
     <Form
-      action="https://superlumen.us11.list-manage.com/subscribe/post?u=29cc54e2162c3639daa008bd1&amp;id=40f8310806"
+      action="https://gatsbycentral.us18.list-manage.com/subscribe/post?u=7ba5fb7dfe0be75fbc4a20b01&amp;id=d5b2592fff"
       method="post"
       target="_blank"
     >
-      <Label>Get the latest Gatsby tips straight to your inbox</Label>
+      <h2>Subscribe</h2>
+      <p>
+        We will send you emails about new articles posted here, and in the
+        future, emails about products which Gatsby Central will sell. See{" "}
+        <Link to="/privacy">privacy</Link> for more info.
+      </p>
+      <p style={{ fontSize: "0.8em" }}>
+        We use MailChimp as our marketing automation platform. By clicking
+        "Submit" to submit this form, you acknowledge that the information you
+        provide will be transferred to MailChimp for processing in accordance
+        with their{" "}
+        <a href="https://mailchimp.com/legal/privacy/" target="_blank">
+          Privacy Policy
+        </a>{" "}
+        and{" "}
+        <a href="https://mailchimp.com/legal/terms/" target="_blank">
+          Terms
+        </a>.
+      </p>
       <Input
         type="email"
         name="EMAIL"
@@ -43,7 +62,7 @@ const SubscribeForm = props => {
       <div style={{ position: "absolute", left: -5000 }} aria-hidden="true">
         <input
           type="text"
-          name="b_1c6b7ca3255dba0ca2da27a42_16ba39cfff"
+          name="b_7ba5fb7dfe0be75fbc4a20b01_d5b2592fff"
           tabIndex="-1"
           value=""
         />
