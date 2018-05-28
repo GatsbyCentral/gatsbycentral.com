@@ -55,8 +55,7 @@ const Privacy = () => {
       <h2>Questions</h2>
       <p>
         If anything about privacy policy is not clear, or you have any
-        questions, just let us know. You can reach Callum Macdonald personally
-        at callum@superlumen.io.
+        questions, contact callum@superlumen.io.
       </p>
     </Container>
   );
