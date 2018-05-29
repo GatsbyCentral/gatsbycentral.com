@@ -50,4 +50,6 @@ export default Snippets;
 
 const Item = styled(Link)`
   font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
 `;
