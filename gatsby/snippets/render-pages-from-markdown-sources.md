@@ -1,6 +1,6 @@
 ---
 path: "/render-pages-from-markdown-sources"
-title: Render pages from Markdown Sources 
+title: Render pages from markdown sources 
 date: "2018-05-28"
 ---
 
