@@ -32,6 +32,9 @@ const MainMenu = () => {
           <Link to="/posts">All Posts</Link>
         </MenuItem>
         <MenuItem>
+          <Link to="/snippets">Snippets</Link>
+        </MenuItem>
+        <MenuItem>
           <Link to="/community">Community</Link>
         </MenuItem>
       </Container>
