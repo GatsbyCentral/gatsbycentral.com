@@ -45,7 +45,7 @@ export const pageQuery = graphql`
       }
     }
     allCommentsJson(
-      filter: { post: { eq: $path } }
+      filter: { slug: { eq: $path } }
       sort: { fields: [date], order: ASC }
     ) {
       edges {
