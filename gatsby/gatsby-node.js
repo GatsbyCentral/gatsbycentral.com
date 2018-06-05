@@ -1,4 +1,15 @@
 const path = require("path");
+const _ = require("lodash");
+const toHAST = require(`mdast-util-to-hast`);
+const hastToHTML = require(`hast-util-to-html`);
+const Remark = require(`remark`);
+
+// Initialise remark
+const remark = new Remark().data(`settings`, {
+  commonmark: true,
+  footnotes: true,
+  pedantic: true
+});
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -40,4 +51,24 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     return posts;
   });
+};
+
+exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+  const { createNodeField } = boundActionCreators;
+
+  // If this is a YAML node
+  if (_.get(node, "internal.type") === `CommentsJson`) {
+    // Generate an HTML version of the markdown field `message`
+    const ast = remark.parse(_.get(node, "message"));
+    const htmlAst = toHAST(ast, { allowDangerousHTML: true });
+    const html = hastToHTML(htmlAst, {
+      allowDangerousHTML: true
+    });
+
+    createNodeField({
+      node,
+      name: "messageHtml",
+      value: html
+    });
+  }
 };
