@@ -58,7 +58,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
 
-  // If this is a YAML node
+  // For comment nodes (which are stored in JSON) parse the `message` field from
+  // markdown into HTML, and add it to the node as a field called `messageHtml`.
+  // Then we can use that field to render the comments.
   if (_.get(node, "internal.type") === `CommentsJson`) {
     // Generate an HTML version of the markdown field `message`
     const ast = remark.parse(_.get(node, "message"));
