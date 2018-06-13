@@ -1,1 +1,9 @@
-{"_id":"ba9295a0-6730-11e8-80a1-6159756e46d5","post":"/how-to-handle-comments-in-gatsby-blogs","name":"Khurram Baig","email":"fc50fcc877f50c09b6fa574208f8f98b","message":"I would go with staticman after reading this. Might run my own instance.","date":1528031962,"timestamp":1528031962}
+{
+  "_id": "ba9295a0-6730-11e8-80a1-6159756e46d5",
+  "postPath": "/how-to-handle-comments-in-gatsby-blogs",
+  "name": "Khurram Baig",
+  "email": "fc50fcc877f50c09b6fa574208f8f98b",
+  "message":
+    "I would go with staticman after reading this. Might run my own instance.",
+  "date": 1528031962
+}
