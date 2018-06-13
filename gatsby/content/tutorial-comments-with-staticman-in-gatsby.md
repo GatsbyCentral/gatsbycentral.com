@@ -95,6 +95,8 @@ Now that you've connected StaticMan, the next step is to configure it.
 
 Create a new file at the root of your repository called `staticman.yml`. Copy the contents from [the StaticMan sample config file](https://raw.githubusercontent.com/eduardoboucas/staticman/5c37482e13d7eb33cafe413c6c5b3a1a853a7d12/staticman.sample.yml).
 
+> **NOTE** The filename must be exactly `staticman.yml`, not `.yaml` or otherwise.
+
 The sample configuration is fine for this tutorial. You can read the comments in the file to learn more about the available options.
 
 ### Change `path`
