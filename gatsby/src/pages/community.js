@@ -33,6 +33,12 @@ const CommunityPage = () => {
         Discussions and stories for developers. Get started at the{" "}
         <a href="https://hashnode.com/n/gatsby">Gatsby</a> community there.
       </Segment>
+      <iframe
+        width="225"
+        height="570"
+        src="http://meetu.ps/3hWjzY"
+        frameBorder="0"
+      />
     </div>
   );
 };

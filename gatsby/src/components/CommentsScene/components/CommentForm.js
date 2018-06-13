@@ -46,7 +46,7 @@ const CommentForm = ({ postId }) => {
         type="hidden"
         value="https://www.gatsbycentral.com/comments/success"
       />
-      <input name="options[slug]" type="hidden" value={postId} />
+      <input name="fields[postPath]" type="hidden" value={postId} />
       <label>
         <Input name="fields[name]" type="text" placeholder="Name" required />
       </label>

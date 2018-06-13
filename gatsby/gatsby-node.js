@@ -11,6 +11,8 @@ const remark = new Remark().data(`settings`, {
   pedantic: true
 });
 
+const R = require("ramda");
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
@@ -69,6 +71,23 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       node,
       name: "messageHtml",
       value: html
+    });
+  }
+
+  // console.log(R.path("internal.type")(node));
+  // console.log(node.parent);
+  if (R.path(["internal", "type"])(node) === `MarkdownRemark`) {
+    // Get the parent node
+    const parent = getNode(R.prop("parent", node));
+
+    // Create a field on this node for the "collection" of the parent
+    // NOTE: This is necessary so we can filter `allMarkdownRemark` by
+    // `collection` otherwise there is no way to filter for only markdown
+    // documents of type `post`.
+    createNodeField({
+      node,
+      name: "collection",
+      value: R.prop("sourceInstanceName", parent)
     });
   }
 };
