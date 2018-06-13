@@ -20,7 +20,9 @@ const Date = styled.span``;
 const Element = ({ comment: { node: comment } }) => {
   return (
     <Comment>
-      <Message>{comment.message}</Message>
+      <Message
+        dangerouslySetInnerHTML={{ __html: comment.fields.messageHtml }}
+      />
       {/* Date is `timestamp-seconds` format. Convert with `moment.unix()` */}
       <Date>{moment.unix(comment.date).format("LLL")}</Date> by{" "}
       <Author>{comment.name}</Author>

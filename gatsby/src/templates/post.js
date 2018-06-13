@@ -52,8 +52,10 @@ export const pageQuery = graphql`
         node {
           id
           name
-          message
           date
+          fields {
+            messageHtml
+          }
         }
       }
     }
