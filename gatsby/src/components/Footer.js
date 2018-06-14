@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import BasicLink from "gatsby-link";
 import Twitter from "images/twitter.svg";
 import Facebook from "images/facebook.svg";
 import Github from "images/github.svg";
@@ -18,7 +19,7 @@ const Content = styled.div`
   margin: auto;
 `;
 
-const Link = styled.a`
+const Link = styled(BasicLink)`
   color: white;
   text-decoration: none;
   margin-right: 1rem;
@@ -52,7 +53,7 @@ const Footer = props => {
   return (
     <Element>
       <Content>
-        &copy; chmac Ltd - <Link href="/privacy">Privacy</Link>
+        &copy; chmac Ltd - <Link to="/privacy">Privacy</Link>
         <Link to="/community">Community</Link>
         <Right>
           <List>
