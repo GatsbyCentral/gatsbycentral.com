@@ -21,6 +21,7 @@ const Content = styled.div`
 const Link = styled.a`
   color: white;
   text-decoration: none;
+  margin-right: 1rem;
 `;
 
 const Right = styled.div`
@@ -52,6 +53,7 @@ const Footer = props => {
     <Element>
       <Content>
         &copy; chmac Ltd - <Link href="/privacy">Privacy</Link>
+        <Link to="/community">Community</Link>
         <Right>
           <List>
             <Item>
