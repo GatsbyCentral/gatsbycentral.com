@@ -43,13 +43,7 @@ const MainMenu = () => {
               <Link to="/#posts">Posts</Link>
             </MenuItem>
             <MenuItem>
-              <Link to="/#tutorials">Tutorials</Link>
-            </MenuItem>
-            <MenuItem>
               <Link to="/#snippets">Snippets</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link to="/#starters">Starters</Link>
             </MenuItem>
           </MenuRight>
         </Menu>
