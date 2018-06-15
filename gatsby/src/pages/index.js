@@ -32,6 +32,8 @@ const Index = props => {
       <Sub>Build static sites with the stack you love</Sub>
       <h2>Get Started</h2>
       <PostList posts={featuredPosts} />
+      <br />
+      <br />
       <h2>All posts</h2>
       <PostList posts={posts} />
     </Container>
