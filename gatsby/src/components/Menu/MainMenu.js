@@ -40,13 +40,13 @@ const MainMenu = () => {
           </MenuItem>
           <MenuRight>
             <MenuItem>
-              <Link to="/posts">Posts</Link>
+              <Link to="/#posts">Posts</Link>
             </MenuItem>
             <MenuItem>
-              <Link to="/snippets">Snippets</Link>
+              <Link to="/#snippets">Snippets</Link>
             </MenuItem>
             <MenuItem>
-              <Link to="/starters">Starters</Link>
+              <Link to="/#starters">Starters</Link>
             </MenuItem>
           </MenuRight>
         </Menu>

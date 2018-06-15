@@ -22,6 +22,8 @@ const featuredPostPaths = [
 
 const Index = props => {
   const { edges: posts } = props.data.posts;
+  const { edges: snippets } = props.data.snippets;
+  const { edges: starters } = props.data.starters;
   const featuredPosts = posts.filter(post =>
     featuredPostPaths.includes(post.node.frontmatter.path)
   );
@@ -30,12 +32,14 @@ const Index = props => {
       <Meta data={meta} />
       <Banner>Become a master of GatsbyJS</Banner>
       <Sub>Build static sites with the stack you love</Sub>
-      <h2>Get Started</h2>
+      <H2>Start here</H2>
       <PostList posts={featuredPosts} />
-      <br />
-      <br />
-      <h2>All posts</h2>
+      <H2 id="posts">Posts</H2>
       <PostList posts={posts} />
+      <H2 id="snippets">Snippets</H2>
+      <PostList posts={snippets} />
+      <H2 id="starters">Starters</H2>
+      <PostList posts={starters} />
     </Container>
   );
 };
@@ -58,6 +62,32 @@ export const query = graphql`
         }
       }
     }
+    snippets: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "snippets" } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
+    starters: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "starters" } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -69,5 +99,8 @@ const Banner = styled.h1`
 const Sub = styled.div`
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 3rem;
+`;
+
+const H2 = styled.h2`
+  margin-top: 3rem;
 `;
