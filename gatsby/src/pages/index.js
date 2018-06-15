@@ -14,6 +14,8 @@ const meta = {
   description: "The Community for Gatsby Developers"
 };
 
+// These posts are filtered from the `posts` array to be shown in the "Start
+// Here" section of the homepage.
 const featuredPostPaths = [
   "/what-is-gatsby-exactly",
   "/introduction-to-gatsby-data-flow",
