@@ -24,6 +24,7 @@ const Index = props => {
   const { edges: posts } = props.data.posts;
   const { edges: snippets } = props.data.snippets;
   const { edges: starters } = props.data.starters;
+  const { edges: tutorials } = props.data.tutorials;
   const featuredPosts = posts.filter(post =>
     featuredPostPaths.includes(post.node.frontmatter.path)
   );
@@ -36,6 +37,8 @@ const Index = props => {
       <PostList posts={featuredPosts} />
       <H2 id="posts">Posts</H2>
       <PostList posts={posts} />
+      <H2 id="posts">Tutorials</H2>
+      <PostList posts={tutorials} />
       <H2 id="snippets">Snippets</H2>
       <PostList posts={snippets} />
       <H2 id="starters">Starters</H2>
@@ -51,6 +54,19 @@ export const query = graphql`
     posts: allMarkdownRemark(
       filter: { fields: { collection: { eq: "posts" } } }
       sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
+    tutorials: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "tutorials" } } }
     ) {
       edges {
         node {
