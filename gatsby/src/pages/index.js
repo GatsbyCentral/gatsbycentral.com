@@ -39,7 +39,7 @@ const Index = props => {
       <PostList posts={featuredPosts} />
       <H2 id="posts">Posts</H2>
       <PostList posts={posts} />
-      <H2 id="posts">Tutorials</H2>
+      <H2 id="tutorials">Tutorials</H2>
       <PostList posts={tutorials} />
       <H2 id="snippets">Snippets</H2>
       <PostList posts={snippets} />
