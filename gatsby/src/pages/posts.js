@@ -20,7 +20,7 @@ const Posts = props => {
 export const query = graphql`
   query allPosts {
     allMarkdownRemark(
-      filter: { fields: { collection: { eq: "pages" } } }
+      filter: { fields: { collection: { eq: "posts" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
