@@ -59,22 +59,22 @@ const Footer = props => {
           <List>
             <Item>
               <a href="https://twitter.com/gatsbycentral" target="_blank">
-                <Twitter />
+                {/*<Twitter />*/}
               </a>
             </Item>
             <Item>
               <a href="https://www.facebook.com/gatsbycentral/" target="_blank">
-                <Facebook />
+                {/*<Facebook />*/}
               </a>
             </Item>
             <Item>
               <a href="https://github.com/gatsbycentral" target="_blank">
-                <Github />
+                {/*<Github />*/}
               </a>
             </Item>
             <Item>
               <a href="https://www.meetup.com/gatsbyjs/" target="_blank">
-                <Meetup />
+                {/*<Meetup />*/}
               </a>
             </Item>
           </List>

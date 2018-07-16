@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "gatsby-link";
+import Layout from "components/layout";
 
 import Meta from "components/Meta/Meta";
 
@@ -31,21 +31,23 @@ const Index = props => {
     featuredPostPaths.includes(post.node.frontmatter.path)
   );
   return (
-    <Container>
-      <Meta data={meta} />
-      <Banner>Become a master of GatsbyJS</Banner>
-      <Sub>Build static sites with the stack you love</Sub>
-      <H2>Start here</H2>
-      <PostList posts={featuredPosts} />
-      <H2 id="posts">Posts</H2>
-      <PostList posts={posts} />
-      <H2 id="tutorials">Tutorials</H2>
-      <PostList posts={tutorials} />
-      <H2 id="snippets">Snippets</H2>
-      <PostList posts={snippets} />
-      <H2 id="starters">Starters</H2>
-      <PostList posts={starters} />
-    </Container>
+    <Layout>
+      <Container>
+        <Meta data={meta} />
+        <Banner>Become a master of GatsbyJS</Banner>
+        <Sub>Build static sites with the stack you love</Sub>
+        <H2>Start here</H2>
+        <PostList posts={featuredPosts} />
+        <H2 id="posts">Posts</H2>
+        <PostList posts={posts} />
+        <H2 id="tutorials">Tutorials</H2>
+        <PostList posts={tutorials} />
+        <H2 id="snippets">Snippets</H2>
+        <PostList posts={snippets} />
+        <H2 id="starters">Starters</H2>
+        <PostList posts={starters} />
+      </Container>
+    </Layout>
   );
 };
 

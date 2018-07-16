@@ -1,14 +1,16 @@
 import React from "react";
-import Link from "gatsby-link";
+import Layout from "components/layout";
 
 const SecondPage = () => (
-  <div>
-    <h1>Gatsby Central</h1>
-    <p>The Community for Gatsby Developer</p>
-    <a href="https://www.gatsbycentral.com" target="_blank">
-      Find us here
-    </a>
-  </div>
+  <Layout>
+    <div>
+      <h1>Gatsby Central</h1>
+      <p>The Community for Gatsby Developer</p>
+      <a href="https://www.gatsbycentral.com" target="_blank">
+        Find us here
+      </a>
+    </div>
+  </Layout>
 );
 
 export default SecondPage;

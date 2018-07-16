@@ -1,6 +1,7 @@
 import React from "react";
 import Meta from "components/Meta/Meta";
 import Link from "gatsby-link";
+import Layout from "components/layout.js";
 
 import SubscribeForm from "components/SubscribeForm";
 import Comments from "components/CommentsScene/CommentsScene";
@@ -16,23 +17,24 @@ const Content = BasicContent.extend`
 `;
 
 export default function Template(props) {
-  console.log(props);
   const { markdownRemark, allCommentsJson: comments } = props.data;
   const { frontmatter, html, excerpt } = markdownRemark;
 
   return (
-    <Content>
-      <Meta data={{ ...frontmatter, description: excerpt }} rich />
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <p>
-        <em>Last updated: {frontmatter.date}</em>
-      </p>
-      <Share path={frontmatter.path} />
-      <SubscribeForm />
-      <Comments postId={frontmatter.path} comments={comments} />
-      <Link to="/posts">All Posts</Link>
-    </Content>
+    <Layout>
+      <Content>
+        <Meta data={{ ...frontmatter, description: excerpt }} rich />
+        <h1>{frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <p>
+          <em>Last updated: {frontmatter.date}</em>
+        </p>
+        <Share path={frontmatter.path} />
+        <SubscribeForm />
+        <Comments postId={frontmatter.path} comments={comments} />
+        <Link to="/posts">All Posts</Link>
+      </Content>
+    </Layout>
   );
 }
 

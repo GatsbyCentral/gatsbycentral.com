@@ -6,7 +6,7 @@ import MainMenu from "components/Menu/MainMenu";
 import Footer from "components/Footer";
 
 import "typeface-source-sans-pro";
-import "./index.css";
+import "./layout.css";
 // Import the prismjs theme for syntax highlighting in markdown
 import "prismjs/themes/prism-coy.css";
 
@@ -24,7 +24,7 @@ const Layout = props => {
       <Wrapper>
         <MainMenu />
         <Container>
-          <div style={{ flex: 1 }}>{props.children()}</div>
+          <div style={{ flex: 1 }}>{props.children}</div>
         </Container>
         <Footer />
       </Wrapper>
