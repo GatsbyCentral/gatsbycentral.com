@@ -3,7 +3,6 @@ path: "/choosing-a-cms-for-a-personal-gatsby-project"
 title: Choosing a CMS for a personal Gatsby project
 date: "2018-04-05"
 ---
-
 > tl;dr Put your content in Markdown and use GitHub to create / edit. If you want a better GUI, use netlify-cms.
 
 You like Gatsby. You know [what it is](/what-is-gatsby-exactly). You're messing around with a personal project. Where do you put the content?

@@ -3,7 +3,6 @@ path: "/from-wordpress-to-gatsby"
 title: From WordPress to Gatsby
 date: "2018-05-28"
 ---
-
 You have a WordPress blog. You've heard that Gatsby is all kinds of awesome. You want to switch. Well sit tight, this is gonna be a journey.
 
 > tl;dr: Moving content from WordPress to Gatsby will be painful. Consider starting a new blog on Gatsby instead. Or budget 1-2 days and get ready to dig in.

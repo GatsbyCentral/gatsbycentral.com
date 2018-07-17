@@ -3,7 +3,6 @@ path: "/introduction-to-gatsby-data-flow"
 title: Introduction to Gatsby data flow
 date: "2018-03-15"
 ---
-
 You're looking at Gatsby. You've read a few things. How does data move through Gatsby? Where does the GraphQL schema come from?
 
 > tl;dr Data goes from sources -> gatsby nodes -> GraphQL -> your components (layouts / pages).

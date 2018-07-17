@@ -3,7 +3,6 @@ path: "/can-gatsby-handle-large-sites"
 title: Can Gatsby handle large sites?
 date: "2018-03-20"
 ---
-
 > tl;dr **No**. Sites with >1k pages will not perform very well with Gatsby v1.
 
 ## How large is large?
