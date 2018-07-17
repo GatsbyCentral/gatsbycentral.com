@@ -56,6 +56,9 @@ const typography = new Typography({
         marginTop: "4rem",
         marginBottom: "1rem"
       },
+      h3: {
+        color: "#d81e5b"
+      },
       blockquote: {
         borderLeft: "solid 4px hsla(41,100%,53%,1)",
         fontStyle: "italic",
