@@ -1,12 +1,12 @@
 import React from "react";
-import Meta from "components/Meta/Meta";
 import { graphql, Link } from "gatsby";
-import Layout from "components/layout.js";
+import styled from "styled-components";
 
+import Meta from "components/Meta/Meta";
+import Layout from "components/layout.js";
 import SubscribeForm from "components/SubscribeForm";
 import Comments from "components/CommentsScene/CommentsScene";
 import Share from "components/Share";
-
 import BasicContent from "components/Layout/Content";
 
 const Content = BasicContent.extend`
@@ -26,11 +26,11 @@ export default function Template(props) {
         <Meta data={{ ...frontmatter, description: excerpt }} rich />
         <h1>{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        <Share path={frontmatter.path} />
         <SubscribeForm />
-        <p>
+        <Share path={frontmatter.path} />
+        <LastUpdated>
           <em>Post last updated: {frontmatter.date}</em>
-        </p>
+        </LastUpdated>
         <Comments postId={frontmatter.path} comments={comments} />
         <Link to="/posts">All Posts</Link>
       </Content>
@@ -65,4 +65,8 @@ export const pageQuery = graphql`
       }
     }
   }
+`;
+
+const LastUpdated = styled.p`
+  margin-top: 4rem;
 `;
