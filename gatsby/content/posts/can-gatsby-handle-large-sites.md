@@ -5,6 +5,9 @@ date: "2018-03-20"
 ---
 > tl;dr **No**. Sites with >1k pages will not perform very well with Gatsby v1.
 
+> **UPDATE**: Gatsby v2 is in beta, and supports **very** large sites. See [what's new in Gatsby v2](/whats-new-in-gatsby-v2) and [Getting started with v2](/getting-started-with-gatsby-v2) for more.
+
+
 ## How large is large?
 
 Short answer, it depends.
