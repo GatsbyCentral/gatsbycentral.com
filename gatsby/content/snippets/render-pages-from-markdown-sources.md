@@ -2,6 +2,8 @@
 path: "/render-pages-from-markdown-sources"
 title: Render pages from markdown sources 
 date: "2018-05-28"
+tags:
+  - v1
 ---
 
 ```

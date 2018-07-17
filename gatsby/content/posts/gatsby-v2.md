@@ -2,6 +2,9 @@
 path: "/gatsby-v2"
 title: "Gatsby v2"
 date: "2018-07-15"
+tags:
+  - v2
+  - beta
 ---
 Gatsby v2 is in beta. Awesome. What does that mean? Should you upgrade? Answer these questions and more...
 
