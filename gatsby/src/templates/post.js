@@ -26,11 +26,11 @@ export default function Template(props) {
         <Meta data={{ ...frontmatter, description: excerpt }} rich />
         <h1>{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        <p>
-          <em>Last updated: {frontmatter.date}</em>
-        </p>
         <Share path={frontmatter.path} />
         <SubscribeForm />
+        <p>
+          <em>Post last updated: {frontmatter.date}</em>
+        </p>
         <Comments postId={frontmatter.path} comments={comments} />
         <Link to="/posts">All Posts</Link>
       </Content>

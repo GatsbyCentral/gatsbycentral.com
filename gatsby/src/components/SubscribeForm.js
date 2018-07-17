@@ -34,9 +34,8 @@ const SubscribeForm = props => {
     >
       <h2>Subscribe</h2>
       <p>
-        We will send you emails about new articles posted here, and in the
-        future, emails about products which Gatsby Central will sell. See{" "}
-        <Link to="/privacy">privacy</Link> for more info.
+        Want regular updates on Gatsby and its awesomeness? Subscribe here. No
+        spam, promise. Full details on <Link to="/privacy">privacy</Link>.
       </p>
       <p style={{ fontSize: "0.8em" }}>
         We use MailChimp as our marketing automation platform. By clicking
