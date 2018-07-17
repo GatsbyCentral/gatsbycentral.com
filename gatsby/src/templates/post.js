@@ -1,6 +1,6 @@
 import React from "react";
 import Meta from "components/Meta/Meta";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "components/layout.js";
 
 import SubscribeForm from "components/SubscribeForm";
