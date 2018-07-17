@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GatsbyLink from "gatsby-link";
+import { Link as GatsbyLink } from "gatsby";
 import Container from "components/Layout/Container";
 
 const Wrapper = styled.div`

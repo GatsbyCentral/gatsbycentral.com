@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BasicLink from "gatsby-link";
+import { Link as BasicLink } from "gatsby";
 // import Twitter from "images/twitter.svg";
 // import Facebook from "images/facebook.svg";
 // import Github from "images/github.svg";
