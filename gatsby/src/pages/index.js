@@ -20,7 +20,7 @@ const meta = {
 const featuredPostPaths = [
   "/what-is-gatsby-exactly",
   "/introduction-to-gatsby-data-flow",
-  "/meta-tags-in-gatsby"
+  "/gatsby-v2"
 ];
 
 const Index = props => {
@@ -28,8 +28,11 @@ const Index = props => {
   const { edges: snippets } = props.data.snippets;
   const { edges: starters } = props.data.starters;
   const { edges: tutorials } = props.data.tutorials;
-  const featuredPosts = posts.filter(post =>
-    featuredPostPaths.includes(post.node.frontmatter.path)
+
+  // Find our featured posts by iterating over the `featuredPostPaths` array and
+  // finding each post in turn from the `posts` array.
+  const featuredPosts = featuredPostPaths.map(path =>
+    posts.find(post => post.node.frontmatter.path === path)
   );
   return (
     <Layout>
