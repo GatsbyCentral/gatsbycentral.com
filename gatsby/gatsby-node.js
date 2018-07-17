@@ -13,8 +13,8 @@ const remark = new Remark().data(`settings`, {
 
 const R = require("ramda");
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   const blogPostTemplate = path.resolve(`src/templates/post.js`);
   return graphql(`
@@ -55,8 +55,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   });
 };
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators;
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
 
   // For comment nodes (which are stored in JSON) parse the `message` field from
   // markdown into HTML, and add it to the node as a field called `messageHtml`.
