@@ -13,7 +13,7 @@ const CommentsScene = ({ postId, comments }) => {
       </p>
       {comments && comments.edges && comments.edges.length ? (
         comments.edges.map((comment, i) => (
-          <Comment key={comment.node.date} comment={comment} first={i === 0} />
+          <Comment key={comment.node.id} comment={comment} first={i === 0} />
         ))
       ) : (
         <p>Be the first to post a comment on this post</p>
