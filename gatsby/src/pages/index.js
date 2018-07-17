@@ -26,7 +26,7 @@ const featuredPostPaths = [
 const Index = props => {
   const { edges: posts } = props.data.posts;
   const { edges: snippets } = props.data.snippets;
-  const { edges: starters } = props.data.starters;
+  // const { edges: starters } = props.data.starters;
   const { edges: tutorials } = props.data.tutorials;
 
   // Find our featured posts by iterating over the `featuredPostPaths` array and
@@ -48,8 +48,8 @@ const Index = props => {
         <PostList posts={tutorials} />
         <H2 id="snippets">Snippets</H2>
         <PostList posts={snippets} />
-        <H2 id="starters">Starters</H2>
-        <PostList posts={starters} />
+        {/*<H2 id="starters">Starters</H2>*/}
+        {/*<PostList posts={starters} />*/}
       </Container>
     </Layout>
   );
