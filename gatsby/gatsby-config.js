@@ -11,7 +11,6 @@ module.exports = {
     "gatsby-plugin-resolve-src",
     "gatsby-plugin-netlify",
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-react-next",
     "gatsby-plugin-catch-links",
     {
       resolve: `gatsby-plugin-typography`,
@@ -54,16 +53,16 @@ module.exports = {
         path: `${__dirname}/_data/comments/`
       }
     },
-    {
-      resolve: "gatsby-plugin-svgr",
-      options: {
-        dir: `${__dirname}/src/images`, // only process this directory
-        // svgr options
-        icon: true,
-        viewBox: true
-        // see https://github.com/smooth-code/svgr for a list of all options
-      }
-    },
+    // {
+    // resolve: "gatsby-plugin-svgr",
+    // options: {
+    //   dir: `${__dirname}/src/images`, // only process this directory
+    // svgr options
+    // icon: true,
+    // viewBox: true
+    // see https://github.com/smooth-code/svgr for a list of all options
+    // }
+    // },
     {
       resolve: "gatsby-transformer-remark",
       options: {
