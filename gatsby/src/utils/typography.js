@@ -42,12 +42,13 @@ const typography = new Typography({
         color: "#6bd4c8",
         borderBottom: "none"
       },
-      h1: { fontSize: "2.5rem", color: "#d81e5b", marginBottom: "1rem" },
+      h1: { fontSize: "2.5rem", color: "#d81e5b", marginBottom: "4rem" },
       h2: {
         fontSize: "2rem",
         fontWeight: 300,
         color: "#d81e5b",
         borderBottom: "1px solid",
+        marginTop: "4rem",
         marginBottom: "1rem"
       },
       blockquote: {
