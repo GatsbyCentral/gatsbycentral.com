@@ -38,7 +38,7 @@ const Index = props => {
     <Layout>
       <Container>
         <Meta data={meta} />
-        <Banner>Become a master of GatsbyJS</Banner>
+        <Banner>Become a GatsbyJS master</Banner>
         <Sub>Build static sites with the stack you love</Sub>
         <H2>Start here</H2>
         <PostList posts={featuredPosts} />
