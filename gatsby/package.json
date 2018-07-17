@@ -8,7 +8,7 @@
     "gatsby-image": "^2.0.0-beta.6",
     "gatsby-plugin-catch-links": "~1.0.1",
     "gatsby-plugin-google-analytics": "^1.0.8",
-    "gatsby-plugin-netlify": "^1.0.19",
+    "gatsby-plugin-netlify": "^2.0.0-beta.3",
     "gatsby-plugin-react-helmet": "^3.0.0-beta.3",
     "gatsby-plugin-react-next": "~1.0.4",
     "gatsby-plugin-resolve-src": "^2.0.0-beta.1",
