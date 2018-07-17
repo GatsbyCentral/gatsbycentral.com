@@ -3,10 +3,13 @@ import styled from "styled-components";
 import moment from "moment";
 
 const Comment = styled.div`
-  border-bottom: 1px solid silver;
+  ${({ first }) =>
+    first
+      ? `border-top: 1px solid silver;`
+      : ``} border-bottom: 1px solid silver;
   font-size: 0.75rem;
-  margin-bottom: 1rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 `;
 const Message = styled.div`
   font-size: 1rem;
@@ -17,9 +20,9 @@ const Author = styled.span`
 `;
 const Date = styled.span``;
 
-const Element = ({ comment: { node: comment } }) => {
+const Element = ({ first, comment: { node: comment } }) => {
   return (
-    <Comment>
+    <Comment first={first}>
       <Message
         dangerouslySetInnerHTML={{ __html: comment.fields.messageHtml }}
       />

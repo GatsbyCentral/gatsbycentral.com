@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Form = styled.form`
+  margin-top: 1rem;
   display: flex;
   flex-flow: wrap column;
 `;
 
 const Input = styled.input`
-  font-size: 1.5rem;
-  padding: 0.5rem;
+  font-size: 1rem;
+  padding: 0.2rem;
   width: 100%;
   line-height: 2rem;
   margin-bottom: 1rem;
@@ -16,7 +17,7 @@ const Input = styled.input`
 `;
 
 const Textarea = styled.textarea`
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem;
   width: 100%;
   line-height: 2rem;
@@ -27,7 +28,7 @@ const Button = styled.button`
   background-color: ${({ theme }) => theme.primaryColor};
   border: 2px solid ${({ theme }) => theme.primaryColor};
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
   padding: 0.5rem;
   width: 30%;
