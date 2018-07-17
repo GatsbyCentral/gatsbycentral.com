@@ -6,7 +6,7 @@ date: "2018-04-10"
 
 You're familiar with Gatsby. You realise there's much awesomeness in v2. You want some of that now. You **need** it now.
 
-> tl;dr Install `react` and `react-dom`l`gatsby@next` and probably `react-helmet`.
+> tl;dr Install `react`, `react-dom`, `gatsby@next` and probably `react-helmet`.
 
 ## What's in v2?  
 
