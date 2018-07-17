@@ -6,7 +6,11 @@ const SecondPage = () => (
     <div>
       <h1>Gatsby Central</h1>
       <p>The Community for Gatsby Developer</p>
-      <a href="https://www.gatsbycentral.com" target="_blank">
+      <a
+        href="https://www.gatsbycentral.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Find us here
       </a>
     </div>

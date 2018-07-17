@@ -15,7 +15,11 @@ const CommunityPage = () => {
           <h3>Germany</h3>
           <ul>
             <li>
-              <a href="https://www.meetup.com/gatsbyjs" target="_blank">
+              <a
+                href="https://www.meetup.com/gatsbyjs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Berlin
               </a>
             </li>
@@ -26,6 +30,7 @@ const CommunityPage = () => {
           <a
             href="https://stackoverflow.com/questions/tagged/gatsby"
             target="_blank"
+            rel="noopener noreferrer"
           >
             here.
           </a>
@@ -36,6 +41,7 @@ const CommunityPage = () => {
           <a href="https://hashnode.com/n/gatsby">Gatsby</a> community there.
         </Segment>
         <iframe
+          title="meetup"
           width="225"
           height="570"
           src="http://meetu.ps/3hWjzY"

@@ -7,9 +7,6 @@ const Form = styled.form`
   display: inline-block;
   margin-top: 2rem;
 `;
-const Label = styled.label`
-  font-size: 1.5rem;
-`;
 const Button = styled.button`
   background-color: ${({ theme }) => theme.primaryColor};
   border: 2px solid ${({ theme }) => theme.primaryColor};
@@ -33,6 +30,7 @@ const SubscribeForm = props => {
       action="https://gatsbycentral.us18.list-manage.com/subscribe/post?u=7ba5fb7dfe0be75fbc4a20b01&amp;id=d5b2592fff"
       method="post"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <h2>Subscribe</h2>
       <p>
@@ -45,11 +43,19 @@ const SubscribeForm = props => {
         "Submit" to submit this form, you acknowledge that the information you
         provide will be transferred to MailChimp for processing in accordance
         with their{" "}
-        <a href="https://mailchimp.com/legal/privacy/" target="_blank">
+        <a
+          href="https://mailchimp.com/legal/privacy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Privacy Policy
         </a>{" "}
         and{" "}
-        <a href="https://mailchimp.com/legal/terms/" target="_blank">
+        <a
+          href="https://mailchimp.com/legal/terms/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Terms
         </a>.
       </p>

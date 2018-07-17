@@ -31,7 +31,11 @@ const Privacy = () => {
         <p>
           We cannot identify you personally on Google Analytics. There is no way
           for us to know who you are. You can read Google’s privacy policy{" "}
-          <a href="https://policies.google.com/privacy" target="_blank">
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             here
           </a>.
         </p>
@@ -53,11 +57,19 @@ const Privacy = () => {
         <p>We won’t sell or rent your data to anyone else.</p>
         <p>
           Feel free to read MailChimp’s{" "}
-          <a href="https://mailchimp.com/legal/privacy/" target="_blank">
+          <a
+            href="https://mailchimp.com/legal/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             privacy policy
           </a>{" "}
           and{" "}
-          <a href="https://mailchimp.com/legal/terms/" target="_blank">
+          <a
+            href="https://mailchimp.com/legal/terms/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             terms
           </a>.
         </p>

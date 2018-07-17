@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import BasicLink from "gatsby-link";
-import Twitter from "images/twitter.svg";
-import Facebook from "images/facebook.svg";
-import Github from "images/github.svg";
-import Meetup from "images/meetup.svg";
+// import Twitter from "images/twitter.svg";
+// import Facebook from "images/facebook.svg";
+// import Github from "images/github.svg";
+// import Meetup from "images/meetup.svg";
 
 const Element = styled.div`
   margin-top: 2rem;
@@ -58,22 +58,38 @@ const Footer = props => {
         <Right>
           <List>
             <Item>
-              <a href="https://twitter.com/gatsbycentral" target="_blank">
+              <a
+                href="https://twitter.com/gatsbycentral"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {/*<Twitter />*/}
               </a>
             </Item>
             <Item>
-              <a href="https://www.facebook.com/gatsbycentral/" target="_blank">
+              <a
+                href="https://www.facebook.com/gatsbycentral/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {/*<Facebook />*/}
               </a>
             </Item>
             <Item>
-              <a href="https://github.com/gatsbycentral" target="_blank">
+              <a
+                href="https://github.com/gatsbycentral"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {/*<Github />*/}
               </a>
             </Item>
             <Item>
-              <a href="https://www.meetup.com/gatsbyjs/" target="_blank">
+              <a
+                href="https://www.meetup.com/gatsbyjs/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {/*<Meetup />*/}
               </a>
             </Item>
