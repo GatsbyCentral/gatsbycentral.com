@@ -2,6 +2,8 @@
 path: "/add-type-field-for-markdown-sources"
 title: Add type field for markdown sources 
 date: "2018-05-29"
+tags:
+  - v1
 ---
 
 ```

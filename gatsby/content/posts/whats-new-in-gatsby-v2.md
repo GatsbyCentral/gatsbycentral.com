@@ -2,6 +2,9 @@
 path: "/whats-new-in-gatsby-v2"
 title: "What's new in Gatsby v2"
 date: "2018-07-17"
+tags:
+  - v2
+  - beta
 ---
 Gatsby v2 is in beta. Awesome. What does that mean? What changes come with v2?
 
