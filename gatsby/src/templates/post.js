@@ -32,7 +32,6 @@ export default function Template(props) {
           <em>Post last updated: {frontmatter.date}</em>
         </LastUpdated>
         <Comments postId={frontmatter.path} comments={comments} />
-        <Link to="/posts">All Posts</Link>
       </Content>
     </Layout>
   );
