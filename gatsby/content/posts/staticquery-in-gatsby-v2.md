@@ -5,7 +5,7 @@ date: "2018-07-18"
 ---
 You've heard about `StaticQuery` as part of Gatsby v2. GraphQL everywhere. Sounds great, but how does it work?
 
-> tl;dr Wrap any component in `StaticQuery` and pass two props `query` and `render`. These queries do not get any data about the current page, they're static for the entire build.
+> **tl;dr** - Wrap any component in `StaticQuery` and pass two props `query` and `render`. These queries do not get any data about the current page, they're static for the entire build.
 
 ## What is `StaticQuery`?
 

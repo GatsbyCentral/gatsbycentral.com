@@ -2,12 +2,12 @@
 path: "/getting-started-with-gatsby-v2"
 title: Getting started with Gatsby v2
 date: "2018-04-10"
-tags: 
+tags:
   - v2
 ---
 You're familiar with Gatsby. You realise there's much awesomeness in v2. You want some of that now. You **need** it now.
 
-> tl;dr Install `react`, `react-dom`, `gatsby@next` and probably `react-helmet`.
+> **tl;dr** - Install `react`, `react-dom`, `gatsby@next` and probably `react-helmet`.
 
 ## What's in v2?  
 

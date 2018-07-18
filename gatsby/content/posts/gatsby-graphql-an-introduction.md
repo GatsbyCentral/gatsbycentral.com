@@ -7,7 +7,7 @@ date: "2018-07-20"
 
 You know GraphQL. You're learning Gatsby. How does GraphQL work inside Gatsby?
 
-> tl;dr Gatsby uses GraphQL in 3 ways. In `gatsby-node.js` via `graphql().then()`. In pages via `` const query = graphql`...` ``. In any component via `StaticQuery`.
+> **tl;dr** - Gatsby uses GraphQL in 3 ways. In `gatsby-node.js` via `graphql().then()`. In pages via `` const query = graphql`...` ``. In any component via `StaticQuery`.
 
 ## What data is available?
 

@@ -5,7 +5,7 @@ date: "2018-03-14"
 ---
 How do you create paginated pages in Gatsby? You might have many blog posts and want to show 10 per page. Do you need a Gatsby pagination plugin?
 
-> tl;dr Don't use a plugin (yet). Call `createPage()` and pass limit and skip in context. Use lodash `_.times()` and some custom logic.
+> **tl;dr** - Don't use a plugin (yet). Call `createPage()` and pass limit and skip in context. Use lodash `_.times()` and some custom logic.
 
 ## What is pagination?
 

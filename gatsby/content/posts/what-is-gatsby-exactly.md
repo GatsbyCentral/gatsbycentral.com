@@ -5,7 +5,7 @@ date: "2018-03-16"
 ---
 You've heard people raving about Gatsby. You've seen how fast Gatsby sites are. But what is Gatsby exactly?
 
-> tl;dr Gatsby build static sites from dynamic data. It sucks in your data, combines that with your React components, and builds. The site pre-fetches all links on the screen. It's insanely fast.
+> **tl;dr** - Gatsby build static sites from dynamic data. It sucks in your data, combines that with your React components, and builds. The site pre-fetches all links on the screen. It's insanely fast.
 
 ## Static what?
 

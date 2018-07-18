@@ -3,7 +3,7 @@ path: "/what-is-cache-busting-or-content-hashing"
 title: What is cache busting or content hashing?
 date: "2018-04-10"
 ---
-> tl;dr A hash of the contents of a file is included in the filename. A change in the content changes the filename. These files can be cached forever. This is awesome.
+> **tl;dr** - A hash of the contents of a file is included in the filename. A change in the content changes the filename. These files can be cached forever. This is awesome.
 
 ## What is a hash?
 

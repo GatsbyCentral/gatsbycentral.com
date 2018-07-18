@@ -5,7 +5,7 @@ date: "2018-05-27"
 ---
 You've got a Gatsby site. What do you do about SEO? React and SEO are tricky, how does Gatsby hold up? What other SEO considerations are there in Gatsby?
 
-> tl;dr Gatsby is awesome for SEO automatically. Use react-helmet to set your meta tags. Rejoice.
+> **tl;dr** - Gatsby is awesome for SEO automatically. Use react-helmet to set your meta tags. Rejoice.
 
 ## SEO basics
 

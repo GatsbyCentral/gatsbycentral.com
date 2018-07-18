@@ -5,7 +5,7 @@ date: "2018-03-13"
 ---
 You want to set social meta tags. Or you want to set a page `<title>` tag. How does Helmet work?
 
-> tl;dr Use`<Helmet>` just like `<head>` in both the layout and every page component.
+> **tl;dr** - Use`<Helmet>` just like `<head>` in both the layout and every page component.
 
 ## What are meta tags?
 

@@ -5,7 +5,7 @@ date: "2018-02-28"
 ---
 How can you use data from GraphQL queries in Gatsby layouts? You have data in Gatsby that you want to use inside templates. Is there a layout version of `pageQuery`?
 
-> **tl;dr** Your query variable can be called anything. It must be exported. The query must be named. That name must be unique. Data arrives as `props.data`.
+> **tl;dr** - Your query variable can be called anything. It must be exported. The query must be named. That name must be unique. Data arrives as `props.data`.
 
 ## `pageQuery` is not special
 

@@ -5,7 +5,7 @@ date: "2018-07-19"
 ---
 You're ready to upgrade to Gatsby v2. You've read that layouts have disappeared. What do you replace them with?
 
-> tl;dr No more "special" layouts, just use normal React components.
+> **tl;dr** - No more "special" layouts, just use normal React components.
 
 In Gatsby v1, layouts were treated specially. They could use GraphQL queries. They were given a special `children` prop which was a function. Whacky but true. None of this is necessary in Gatsby v2.
 

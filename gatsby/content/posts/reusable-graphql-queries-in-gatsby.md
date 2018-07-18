@@ -5,7 +5,7 @@ date: "2018-02-27"
 ---
 You want to use the same query in multiple components. Or maybe you want to use queries outside of pages / layouts. Well, you can't, but you can use fragments!
 
-> **tl;dr** Use fragments. Export fragments from any component. Use them anywhere.
+> **tl;dr** - Use fragments. Export fragments from any component. Use them anywhere.
 
 ## Sharing queries
 

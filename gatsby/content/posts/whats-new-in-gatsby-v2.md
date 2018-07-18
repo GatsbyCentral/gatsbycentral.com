@@ -8,7 +8,7 @@ tags:
 ---
 Gatsby v2 is in beta. Awesome. What does that mean? What changes come with v2?
 
-> tl;dr Gatsby v2 brings better data loading which supports giant sites, lets you use GraphQL in every component, and some other performance improvements.
+> **tl;dr** - Gatsby v2 brings better data loading which supports giant sites, lets you use GraphQL in every component, and some other performance improvements.
 
 Gatsby v2 introduce a lot of changes under the hood. Some of those will affect you. See our [refactoring cheat sheet](/gatsby-v2-refactoring-cheat-sheet) for a quick summary. Great. What are the major changes?
 
