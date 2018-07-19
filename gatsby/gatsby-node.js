@@ -50,7 +50,8 @@ exports.createPages = ({ actions, graphql }) => {
         path: node.frontmatter.path,
         component: blogPostTemplate,
         context: {
-          tags: node.frontmatter.tags
+          // Add default value (empty array) if no tags exist in node. Otherwise graphql will fail.
+          tags: node.frontmatter.tags || []
         }
       });
     });
