@@ -8,6 +8,7 @@ import SubscribeForm from "components/SubscribeForm";
 import Comments from "components/CommentsScene/CommentsScene";
 import Share from "components/Share";
 import BasicContent from "components/Layout/Content";
+import RelatedPosts from "components/Post/RelatedPosts/RelatedPosts";
 
 const Content = BasicContent.extend`
   @media (max-width: 900px) {
@@ -17,8 +18,14 @@ const Content = BasicContent.extend`
 `;
 
 export default function Template(props) {
-  const { markdownRemark, allCommentsJson: comments } = props.data;
+  const {
+    markdownRemark,
+    relatedPosts,
+    allCommentsJson: comments
+  } = props.data;
   const { frontmatter, html, excerpt } = markdownRemark;
+
+  console.log(relatedPosts);
 
   return (
     <Layout>
@@ -32,13 +39,14 @@ export default function Template(props) {
           <em>Post last updated: {frontmatter.date}</em>
         </LastUpdated>
         <Comments postId={frontmatter.path} comments={comments} />
+        {relatedPosts ? <RelatedPosts posts={relatedPosts} /> : null}
       </Content>
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query BlogPostByPath($path: String!, $tags: [String]) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       excerpt
@@ -46,6 +54,20 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+      }
+    }
+    relatedPosts: allMarkdownRemark(
+      filter: { frontmatter: { tags: { in: $tags }, path: { ne: $path } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+            tags
+          }
+        }
       }
     }
     allCommentsJson(
