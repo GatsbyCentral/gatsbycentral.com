@@ -2,10 +2,12 @@
 path: "/gatsby-v2-refactoring-cheat-sheet"
 title: Gatsby v2 refactoring cheat sheet
 date: "2018-07-16"
-tags: 
+tags:
   - v2
   - cheat sheet
 ---
+<span style="text-align: center; display: block;">Part of [a series on Gatsby v2](/gatsby-v2)</span>
+
 This is a short cheat sheet to remind you of the refactoring changes needed to move from Gatsby v1 to Gatsby v2. Click each point for the full documentation.
 
 ## Import changes

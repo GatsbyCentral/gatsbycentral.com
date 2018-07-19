@@ -6,6 +6,8 @@ tags:
   - v2
   - beta
 ---
+<span style="text-align: center; display: block;">Part of [a series on Gatsby v2](/gatsby-v2)</span>
+
 Gatsby v2 is in beta. Awesome. What does that mean? What changes come with v2?
 
 > **tl;dr** - Gatsby v2 brings better data loading which supports giant sites, lets you use GraphQL in every component, and some other performance improvements.

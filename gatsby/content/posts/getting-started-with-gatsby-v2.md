@@ -5,6 +5,8 @@ date: "2018-04-10"
 tags:
   - v2
 ---
+<span style="text-align: center; display: block;">Part of [a series on Gatsby v2](/gatsby-v2)</span>
+
 You're familiar with Gatsby. You realise there's much awesomeness in v2. You want some of that now. You **need** it now.
 
 > **tl;dr** - Install `react`, `react-dom`, `gatsby@next` and probably `react-helmet`.

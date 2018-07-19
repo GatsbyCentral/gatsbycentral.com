@@ -2,7 +2,11 @@
 path: "/should-i-rebuild-my-site-for-gatsby-v2"
 title: Should I rebuild my site for Gatsby v2?
 date: "2018-07-21"
+tags:
+  - v2
 ---
+<span style="text-align: center; display: block;">Part of [a series on Gatsby v2](/gatsby-v2)</span>
+
 You have a site built with Gatsby v1. You want to move to v2. Do you start from scratch and rebuild? Or do you refactor from v1 to v2?
 
 > **tl;dr** - It depends. In most cases, refactor. You’ll typically be faster refactoring than rebuilding.

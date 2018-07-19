@@ -2,7 +2,11 @@
 path: "/staticquery-in-gatsby-v2"
 title: StaticQuery in Gatsby v2
 date: "2018-07-18"
+tags:
+  - v2
 ---
+<span style="text-align: center; display: block;">Part of [a series on Gatsby v2](/gatsby-v2)</span>
+
 You've heard about `StaticQuery` as part of Gatsby v2. GraphQL everywhere. Sounds great, but how does it work?
 
 > **tl;dr** - Wrap any component in `StaticQuery` and pass two props `query` and `render`. These queries do not get any data about the current page, they're static for the entire build.

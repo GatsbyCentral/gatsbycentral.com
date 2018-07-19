@@ -2,7 +2,11 @@
 path: "/how-do-layouts-work-in-gatsby-v2"
 title: How do layouts work in Gatsby v2
 date: "2018-07-19"
+tags:
+  - v2
 ---
+<span style="text-align: center; display: block;">Part of [a series on Gatsby v2](/gatsby-v2)</span>
+
 You're ready to upgrade to Gatsby v2. You've read that layouts have disappeared. What do you replace them with?
 
 > **tl;dr** - No more "special" layouts, just use normal React components.

@@ -2,7 +2,11 @@
 path: "/when-should-i-upgrade-to-gatsby-v2"
 title: When should I upgrade to Gatsby v2?
 date: "2018-07-22"
+tags:
+  - v2
 ---
+<span style="text-align: center; display: block;">Part of [a series on Gatsby v2](/gatsby-v2)</span>
+
 Gatsby v2 is out. It's in beta. It [contains some sweetness](/whats-new-in-gatsby-v2). You want it. The big question is, when? Upgrade now? Wait for a final release?
 
 > **tl;dr** - Upgrade now if you need v2 features. Wait if you don't.
