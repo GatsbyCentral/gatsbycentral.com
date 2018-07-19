@@ -31,6 +31,7 @@ exports.createPages = ({ actions, graphql }) => {
               date
               path
               title
+              tags
             }
           }
         }
@@ -44,10 +45,13 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     // Create pages for each markdown file.
-    posts.forEach(({ node }, index) => {
+    posts.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: blogPostTemplate
+        component: blogPostTemplate,
+        context: {
+          tags: node.frontmatter.tags
+        }
       });
     });
 
