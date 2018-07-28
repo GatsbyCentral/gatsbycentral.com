@@ -44,7 +44,7 @@ const CommunityPage = () => {
           title="meetup"
           width="225"
           height="570"
-          src="http://meetu.ps/3hWjzY"
+          src="https://meetu.ps/3hWjzY"
           frameBorder="0"
         />
       </div>
