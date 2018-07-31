@@ -67,12 +67,11 @@ const CommentForm = ({ postId }) => {
       <label>
         <Textarea name="fields[message]" required />
       </label>
-
-      <Button type="submit">Comment</Button>
       <div
         className="g-recaptcha"
         data-sitekey="6LeCvWMUAAAAAAYxtvLnM1HMzHIdoofRlV_4wPy4"
       />
+      <Button type="submit">Comment</Button>
     </Form>
   );
 };
