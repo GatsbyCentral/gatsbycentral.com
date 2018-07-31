@@ -12,7 +12,7 @@ import Container from "components/Layout/Container";
 const meta = {
   // Omit title for homepage to apply Helmet's default value. Otherwise title
   // will be  duplicated (both `Gatsby Central`).
-  description: "The Community for Gatsby Developers"
+  description: "Become a GatsbyJS master"
 };
 
 // These posts are filtered from the `posts` array to be shown in the "Start

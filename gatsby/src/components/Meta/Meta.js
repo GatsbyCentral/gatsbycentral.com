@@ -39,7 +39,7 @@ const Meta = props => {
       <title>{title}</title>
       <meta name="description" content={data.description} />
       <meta name="keywords" content={title} />
-      <meta name="og:title" content={title} />
+      <meta name="og:title" content={title || "Gatsby Central"} />
       <meta name="og:description" content={data.description} />
       <meta name="og:image" content={logo} />
       {data.image ? <meta name="og:image" content={data.image.url} /> : null}
