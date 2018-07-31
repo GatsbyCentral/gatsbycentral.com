@@ -43,6 +43,16 @@ const CommentForm = ({ postId }) => {
       action="https://api.staticman.net/v2/entry/GatsbyCentral/gatsbycentral.com/master/comments"
     >
       <input
+        type="hidden"
+        name="options[reCaptcha][siteKey]"
+        value="6LeCvWMUAAAAAAYxtvLnM1HMzHIdoofRlV_4wPy4"
+      />
+      <input
+        type="hidden"
+        name="options[reCaptcha][secret]"
+        value="u6dW0vbgpaQLAYN8HS1WLaWQl1d2c5QTrLzmvOzQQPnjlfoj5+H2WmIn4KPf+QoB8LCk/6DftbqyWRWS1A8rgMwx4KAX6vKIy64UgVDABPt/gACE45FiPNUZtCqIHD03Ndf8ITjtbDPrOfP+jqOiVd3ibCIbSdRWEHiZMavF9PI="
+      />
+      <input
         name="options[redirect]"
         type="hidden"
         value="https://www.gatsbycentral.com/comments/success"
@@ -59,6 +69,10 @@ const CommentForm = ({ postId }) => {
       </label>
 
       <Button type="submit">Comment</Button>
+      <div
+        className="g-recaptcha"
+        data-sitekey="6LeCvWMUAAAAAAYxtvLnM1HMzHIdoofRlV_4wPy4"
+      />
     </Form>
   );
 };
