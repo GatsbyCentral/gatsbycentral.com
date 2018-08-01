@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "components/layout";
 
-const SecondPage = () => (
+const About = () => (
   <Layout>
     <div>
       <h1>Gatsby Central</h1>
@@ -17,4 +17,4 @@ const SecondPage = () => (
   </Layout>
 );
 
-export default SecondPage;
+export default About;
