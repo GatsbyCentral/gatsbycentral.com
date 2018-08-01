@@ -55,6 +55,7 @@ const Footer = props => {
       <Content>
         &copy; chmac Ltd - <Link to="/privacy">Privacy</Link>
         <Link to="/community">Community</Link>
+        <Link to="/about">About</Link>
         <Right>
           <List>
             <Item>
