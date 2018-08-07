@@ -28,6 +28,7 @@ const Index = props => {
   const { edges: snippets } = props.data.snippets;
   // const { edges: starters } = props.data.starters;
   const { edges: tutorials } = props.data.tutorials;
+  const { edges: plugins } = props.data.plugins;
 
   // Find our featured posts by iterating over the `featuredPostPaths` array and
   // finding each post in turn from the `posts` array.
@@ -48,6 +49,8 @@ const Index = props => {
         <PostList posts={tutorials} />
         <H2 id="snippets">Snippets</H2>
         <PostList posts={snippets} />
+        <H2 id="snippets">Plugins</H2>
+        <PostList posts={plugins} />
         {/*<H2 id="starters">Starters</H2>*/}
         {/*<PostList posts={starters} />*/}
       </Container>
@@ -99,8 +102,8 @@ export const query = graphql`
         }
       }
     }
-    starters: allMarkdownRemark(
-      filter: { fields: { collection: { eq: "starters" } } }
+    plugins: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "plugins" } } }
     ) {
       edges {
         node {
