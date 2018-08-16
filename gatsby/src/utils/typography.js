@@ -74,7 +74,8 @@ const typography = new Typography({
         fontSize: "0.9em",
         margin: "0 0.25em",
         padding: "0.25em 0.65em",
-        display: "inline"
+        display: "inline",
+        whiteSpace: "pre-wrap !important"
       }
     };
   }
