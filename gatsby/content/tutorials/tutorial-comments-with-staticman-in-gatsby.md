@@ -115,7 +115,7 @@ At this point, you need to commit your changes. Hopefully you're familiar with g
 * `git commit -m 'Configured staticman'`
 * `git push`
 
-Now when you look at your fork on GitHub, you should see the `staticman.yaml` file.
+Now when you look at your fork on GitHub, you should see the `staticman.yml` file.
 
 ## Comment form
 
