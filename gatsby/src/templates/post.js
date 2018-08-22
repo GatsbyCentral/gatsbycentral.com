@@ -23,13 +23,14 @@ export default function Template(props) {
     relatedPosts,
     allCommentsJson: comments
   } = props.data;
-  const { frontmatter, html, excerpt } = markdownRemark;
+  const { frontmatter, html, timeToRead, excerpt } = markdownRemark;
 
   return (
     <Layout>
       <Content>
         <Meta data={{ ...frontmatter, description: excerpt }} rich />
         <h1>{frontmatter.title}</h1>
+        <Time>{timeToRead} min read</Time>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <SubscribeForm />
         <Share path={frontmatter.path} />
@@ -48,6 +49,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       excerpt
+      timeToRead
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
@@ -88,4 +90,8 @@ export const pageQuery = graphql`
 
 const LastUpdated = styled.p`
   margin-top: 4rem;
+`;
+const Time = styled.span`
+  font-size: 1rem;
+  color: silver;
 `;
