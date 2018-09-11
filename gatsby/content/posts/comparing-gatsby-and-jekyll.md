@@ -2,6 +2,9 @@
 path: "/comparing-gatsby-and-jekyll"
 title: Comparing Gatsby and Jekyll
 date: "2018-09-11"
+tags:
+  - jekyll
+  - comparison
 ---
 You've heard of Jekyll. You've heard of Gatsby. Which should you choose? What are their relative strenghts? We set out to answer these questions and more.
 
