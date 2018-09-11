@@ -8,7 +8,7 @@ tags:
 ---
 You've heard of Jekyll. You've heard of Gatsby. Which should you choose? What are their relative strenghts? We set out to answer these questions and more.
 
-> tl;dr Jekyll was first release in 2008, Gatsby is significantly more modern.
+> **tl;dr** - Gatsby builds much faster sites. Gatsby supports dynamic sources easier. Jekyll is for blogging, and has lots of themes.
 
 Disclaimer, I know a lot more about Gatsby than about Jekyll. Please feel free to point out any errors in the comments below and we'll update this article.
 
