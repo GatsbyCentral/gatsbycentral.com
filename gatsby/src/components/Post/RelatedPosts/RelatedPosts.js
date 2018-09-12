@@ -4,7 +4,7 @@ import { H1 as StyledH1 } from "../../Style/Headings/H1";
 
 const RelatedPosts = props => {
   const { posts } = props;
-  if (posts.length === 0) return;
+  if (!posts || posts.length === 0) return null;
   return (
     <div>
       <H1>Related Posts</H1>

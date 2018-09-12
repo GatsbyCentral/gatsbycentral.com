@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
 import Meta from "components/Meta/Meta";
@@ -31,6 +31,22 @@ export default function Template(props) {
         <Meta data={{ ...frontmatter, description: excerpt }} rich />
         <h1>{frontmatter.title}</h1>
         <Time>{timeToRead} min read</Time>
+        {props.pageContext.previousPagePath ? (
+          <div>
+            Previous post:{" "}
+            <Link to={props.pageContext.previousPagePath}>
+              {props.pageContext.previousItem.node.frontmatter.title}
+            </Link>
+          </div>
+        ) : null}
+        {props.pageContext.nextPagePath ? (
+          <div>
+            Next post:{" "}
+            <Link to={props.pageContext.nextPagePath}>
+              {props.pageContext.nextItem.node.frontmatter.title}
+            </Link>
+          </div>
+        ) : null}
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <SubscribeForm />
         <Share path={frontmatter.path} />
@@ -38,7 +54,7 @@ export default function Template(props) {
           <em>Post last updated: {frontmatter.date}</em>
         </LastUpdated>
         <Comments postId={frontmatter.path} comments={comments} />
-        {relatedPosts ? <RelatedPosts posts={relatedPosts} /> : null}
+        <RelatedPosts posts={relatedPosts} />
       </Content>
     </Layout>
   );
