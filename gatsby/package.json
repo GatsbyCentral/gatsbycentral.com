@@ -56,6 +56,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "clean": "rm -rf gatsby/.cache",
     "deploy": "gatsby build --prefix-paths",
     "postdeploy": "gh-pages -d public",
     "develop": "gatsby develop",

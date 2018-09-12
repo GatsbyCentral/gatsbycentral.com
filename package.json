@@ -5,7 +5,8 @@
   "author": "superlumen.io",
   "keywords": ["gatsby"],
   "scripts": {
-    "start": "cd gatsby && gatsby develop"
+    "clean": "cd gatsby && yarn clean",
+    "start": "cd gatsby && yarn start"
   },
   "license": "MIT"
 }
