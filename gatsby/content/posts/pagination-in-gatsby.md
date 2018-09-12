@@ -127,6 +127,8 @@ query BlogQuery($skip: Int!, $limit: Int!) {
 
 ## Plugins
 
+**UPDATE**: We have launched our very own pagination plugin, humbly called [gatsby-awesome-pagination](https://github.com/GatsbyCentral/gatsby-awesome-pagination).
+
 There are two pagination plugins right now. They have very similar names! `gatsby-paginate` and `gatsby-pagination`. They both use a similar approach. You get all the data you want in `gatsby-node.js`. Then you pass that data to the component.
 
 Now your query lives in `gatsby-node.js` but your data is used in the component. Part of the magic of GraphQL is putting your queries next to your components.
