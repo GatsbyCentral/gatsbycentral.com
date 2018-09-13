@@ -31,7 +31,7 @@ Dynamic sites will update instantly. Static sites will take some time to update.
 
 ## React
 
-Gatsby is built on top of React. React uses components instead of templates. Conceptually templates and components are similar.
+Gatsby is built on top of [React](https://reactjs.org/). React uses components instead of templates. Conceptually templates and components are similar.
 
 You need to know some React to use Gatsby. React has a steep learning curve at first. It's very powerful. If you're new to React, it will take some time to learn.
 
@@ -55,4 +55,4 @@ Gatsby even prefetches all the images in linked pages!
 
 ## Get started
 
-Now you've got a handle on what Gatsby does. Check out the Gatsby docs and the Getting Started guide. If you have node and npm installed, you can be up and running in a few minutes.
+Now you've got a handle on what Gatsby does. Check out the [Gatsby docs](https://www.gatsbyjs.org/docs/) and the [Getting Started guide](https://www.gatsbyjs.org/docs/). If you have [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed, you can be up and running in a few minutes.

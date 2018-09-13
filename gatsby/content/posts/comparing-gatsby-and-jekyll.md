@@ -10,11 +10,11 @@ You've heard of Jekyll. You've heard of Gatsby. Which should you choose? What ar
 
 > **tl;dr** - Gatsby builds much faster sites. Gatsby supports dynamic sources easier. Jekyll is for blogging, and has lots of themes.
 
-Disclaimer, I know a lot more about Gatsby than about Jekyll. Please feel free to point out any errors in the comments below and we'll update this article.
+**Disclaimer**: I know a lot more about Gatsby than about Jekyll. Please feel free to point out any errors in the comments below and we'll update this article.
 
 ## What is Jekyll?
 
-Jekyll is a static site generator, focused on creating blogs. Posts and pages are first class citizens. Your content lives in Markdown on disk. It's been around for a decade, and it's the backbone of GitHub's pages feature. It was also created by GitHub's cofounder. It's a simple, secure, and performant alternative to traditional blogging platforms.
+[Jekyll](https://jekyllrb.com/) is a static site generator, focused on creating blogs. Posts and pages are first class citizens. Your content lives in Markdown on disk. It's been around for a decade, and it's the backbone of GitHub's pages feature. It was also created by GitHub's cofounder. It's a simple, secure, and performant alternative to traditional blogging platforms.
 
 ## What is Gatsby?
 
@@ -47,7 +47,7 @@ If you care about speed, and you can be your users do, Gatsby is awesome.
 
 ## React
 
-If you want to use Gatsby, you need to know React. Is learning React a good idea? That depends. In some cases, yes. React is quite different compared to Liquid templates. Liquid is much closer to HTML, and for many people, will feel much more intuitive at first.
+If you want to use Gatsby, you need to know React. Is learning [React](https://reactjs.org/) a good idea? That depends. In some cases, yes. React is quite different compared to Liquid templates. Liquid is much closer to HTML, and for many people, will feel much more intuitive at first.
 
 > While React has a steep learning curve, we highly recommend it. It's a game changing paradigm shift. Hard work at first, but definitely worth the effort.
 
