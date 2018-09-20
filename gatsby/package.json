@@ -35,9 +35,10 @@
     "react-router-dom": "^4.2.2",
     "react-share": "^2.2.0",
     "react-typography": "^0.16.13",
-    "styled-components": "^4.0.0-beta.7",
+    "styled-components": "^3.4.9",
     "typeface-source-sans-pro": "^0.0.54",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "unstyled": "^0.0.23"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",

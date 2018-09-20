@@ -35,6 +35,7 @@ const Index = props => {
   const featuredPosts = featuredPostPaths.map(path =>
     posts.find(post => post.node.frontmatter.path === path)
   );
+
   return (
     <Layout>
       <Container>
