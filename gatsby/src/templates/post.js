@@ -10,7 +10,7 @@ import Share from "components/Share";
 import BasicContent from "components/Layout/Content";
 import RelatedPosts from "components/Post/RelatedPosts/RelatedPosts";
 
-const Content = BasicContent.extend`
+const Content = styled(BasicContent)`
   @media (max-width: 900px) {
     font-size: 1.5rem;
     color: hsla(0, 0%, 0%, 0.9);

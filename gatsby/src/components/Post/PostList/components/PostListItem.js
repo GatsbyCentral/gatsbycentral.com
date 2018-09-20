@@ -5,7 +5,7 @@ import BasicLink from "components/Style/Elements/Link.js";
 const Element = styled.div`
   margin-bottom: 0.5rem;
 `;
-const Link = BasicLink.extend`
+const Link = styled(BasicLink)`
   font-size: 1.2rem;
 `;
 

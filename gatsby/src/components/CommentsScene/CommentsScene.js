@@ -30,7 +30,7 @@ const CommentsScene = ({ postId, comments }) => {
 
 export default CommentsScene;
 
-const H1 = StyledH1.extend`
+const H1 = styled(StyledH1)`
   margin-top: 4rem;
   margin-bottom: 1rem;
 `;

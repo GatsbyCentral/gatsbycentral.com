@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { H1 as StyledH1 } from "../../Style/Headings/H1";
+import styled from "styled-components";
 
 const RelatedPosts = props => {
   const { posts } = props;
@@ -21,7 +22,7 @@ const RelatedPosts = props => {
 
 export default RelatedPosts;
 
-const H1 = StyledH1.extend`
+const H1 = styled(StyledH1)`
   margin-top: 4rem;
   margin-bottom: 1rem;
 `;
