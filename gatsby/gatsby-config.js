@@ -53,6 +53,13 @@ module.exports = {
         path: `${__dirname}/_data/comments/`
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "ratings",
+        path: `${__dirname}/_data/ratings/`
+      }
+    },
     // {
     // resolve: "gatsby-plugin-svgr",
     // options: {
