@@ -80,3 +80,23 @@ comments:
     enabled: true
     siteKey: 6LeCvWMUAAAAAAYxtvLnM1HMzHIdoofRlV_4wPy4
     secret: u6dW0vbgpaQLAYN8HS1WLaWQl1d2c5QTrLzmvOzQQPnjlfoj5+H2WmIn4KPf+QoB8LCk/6DftbqyWRWS1A8rgMwx4KAX6vKIy64UgVDABPt/gACE45FiPNUZtCqIHD03Ndf8ITjtbDPrOfP+jqOiVd3ibCIbSdRWEHiZMavF9PI=
+
+
+ratings:
+  allowedFields: ["rating"]
+  branch: "master"
+  commitMessage: "Rating via Staticman"
+  filename: "rating{@timestamp}"
+  format: "json"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  # Generates a PR
+  moderation: true
+  name: "gatsbycentral.com"
+  path: "gatsby/_data/ratings/"
+  requiredFields: ["rating"]
+  recaptcha:
+    enabled: false
