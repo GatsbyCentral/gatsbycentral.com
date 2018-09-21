@@ -83,14 +83,15 @@ export default function Template(props) {
         {/* TODO calculate score in gatsby-node*/}
         {ratings ? (
           <Rating>
-            Reviews:{" "}
+            Rating:{" "}
             {ratings && ratings.edges
               ? ratings.edges.reduce(
                   (accumulator, rating) =>
                     accumulator + parseInt(rating.node.rating),
                   0
-                ) / ratings.edges.length
-              : null}
+                ) / ratings.totalCount
+              : null}{" "}
+            - {ratings.totalCount} Reviews
           </Rating>
         ) : null}
         <ReactStars
@@ -156,6 +157,7 @@ export const pageQuery = graphql`
       filter: { postPath: { eq: $path } }
       sort: { fields: [date], order: ASC }
     ) {
+      totalCount
       edges {
         node {
           id
