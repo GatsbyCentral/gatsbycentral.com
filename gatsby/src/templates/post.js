@@ -81,16 +81,18 @@ export default function Template(props) {
         <Time>{timeToRead} min read</Time>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         {/* TODO calculate score in gatsby-node*/}
-        <Rating>
-          Reviews:{" "}
-          {ratings && ratings.edges
-            ? ratings.edges.reduce(
-                (accumulator, rating) =>
-                  accumulator + parseInt(rating.node.rating),
-                0
-              ) / ratings.edges.length
-            : null}
-        </Rating>
+        {ratings ? (
+          <Rating>
+            Reviews:{" "}
+            {ratings && ratings.edges
+              ? ratings.edges.reduce(
+                  (accumulator, rating) =>
+                    accumulator + parseInt(rating.node.rating),
+                  0
+                ) / ratings.edges.length
+              : null}
+          </Rating>
+        ) : null}
         <ReactStars
           onChange={rating => {
             submitRating(rating, frontmatter.path);
