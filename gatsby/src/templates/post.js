@@ -19,17 +19,16 @@ const Content = styled(BasicContent)`
 `;
 
 const submitRating = (rating, path) => {
-
   const data = {
-    'fields[rating]':rating,
-    'fields[postPath]':path,
+    "fields[rating]": rating,
+    "fields[postPath]": path,
     "options[reCaptcha][siteKey]": "6LeCvWMUAAAAAAYxtvLnM1HMzHIdoofRlV_4wPy4"
   };
 
   const XHR = new XMLHttpRequest();
-  var urlEncodedData = "";
-  var urlEncodedDataPairs = [];
-  var name;
+  let urlEncodedData = "";
+  let urlEncodedDataPairs = [];
+  let name;
 
   // Turn the data object into an array of URL-encoded key/value pairs.
   for (name in data) {
@@ -69,7 +68,8 @@ export default function Template(props) {
   const {
     markdownRemark,
     relatedPosts,
-    allCommentsJson: comments
+    allCommentsJson: comments,
+    allRatingsJson: ratings = []
   } = props.data;
   const { frontmatter, html, timeToRead, excerpt } = markdownRemark;
 
@@ -80,6 +80,17 @@ export default function Template(props) {
         <h1>{frontmatter.title}</h1>
         <Time>{timeToRead} min read</Time>
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        {/* TODO calculate score in gatsby-node*/}
+        <Rating>
+          Reviews:{" "}
+          {ratings && ratings.edges
+            ? ratings.edges.reduce(
+                (accumulator, rating) =>
+                  accumulator + parseInt(rating.node.rating),
+                0
+              ) / ratings.edges.length
+            : null}
+        </Rating>
         <ReactStars
           onChange={rating => {
             submitRating(rating, frontmatter.path);
@@ -139,6 +150,17 @@ export const pageQuery = graphql`
         }
       }
     }
+    allRatingsJson(
+      filter: { postPath: { eq: $path } }
+      sort: { fields: [date], order: ASC }
+    ) {
+      edges {
+        node {
+          id
+          rating
+        }
+      }
+    }
   }
 `;
 
@@ -148,4 +170,7 @@ const LastUpdated = styled.p`
 const Time = styled.span`
   font-size: 1rem;
   color: silver;
+`;
+const Rating = styled.div`
+  font-size: 1.5rem;
 `;
