@@ -9,6 +9,7 @@ import Comments from "components/CommentsScene/CommentsScene";
 import Share from "components/Share";
 import BasicContent from "components/Layout/Content";
 import RelatedPosts from "components/Post/RelatedPosts/RelatedPosts";
+import ReactStars from "react-stars";
 
 const Content = styled(BasicContent)`
   @media (max-width: 900px) {
@@ -16,6 +17,53 @@ const Content = styled(BasicContent)`
     color: hsla(0, 0%, 0%, 0.9);
   }
 `;
+
+const submitRating = (rating, path) => {
+
+  const data = {
+    'fields[rating]':rating,
+    'fields[postPath]':path,
+    "options[reCaptcha][siteKey]": "6LeCvWMUAAAAAAYxtvLnM1HMzHIdoofRlV_4wPy4"
+  };
+
+  const XHR = new XMLHttpRequest();
+  var urlEncodedData = "";
+  var urlEncodedDataPairs = [];
+  var name;
+
+  // Turn the data object into an array of URL-encoded key/value pairs.
+  for (name in data) {
+    urlEncodedDataPairs.push(
+      encodeURIComponent(name) + "=" + encodeURIComponent(data[name])
+    );
+  }
+
+  // Combine the pairs into a single string and replace all %-encoded spaces to
+  // the '+' character; matches the behaviour of browser form submissions.
+  urlEncodedData = urlEncodedDataPairs.join("&").replace(/%20/g, "+");
+
+  // Define what happens on successful data submission
+  XHR.addEventListener("load", function(event) {
+    console.log("Yeah! Data sent and response loaded.");
+  });
+
+  // Define what happens in case of error
+  XHR.addEventListener("error", function(event) {
+    console.log("Oops! Something goes wrong.");
+  });
+
+  // Set up our request
+  XHR.open(
+    "POST",
+    "https://api.staticman.net/v2/entry/GatsbyCentral/gatsbycentral.com/master/ratings"
+  );
+
+  // Add the required HTTP header for form data POST requests
+  XHR.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+  // Finally, send our data.
+  XHR.send(urlEncodedData);
+};
 
 export default function Template(props) {
   const {
@@ -32,6 +80,12 @@ export default function Template(props) {
         <h1>{frontmatter.title}</h1>
         <Time>{timeToRead} min read</Time>
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        <ReactStars
+          onChange={rating => {
+            submitRating(rating, frontmatter.path);
+          }}
+          half={false}
+        />
         <SubscribeForm />
         <Share path={frontmatter.path} />
         <LastUpdated>
