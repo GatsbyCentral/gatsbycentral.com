@@ -94,7 +94,7 @@ ratings:
       options:
         format: "timestamp-seconds"
   # Generates a PR
-  moderation: true
+  moderation: false
   name: "gatsbycentral.com"
   path: "gatsby/_data/ratings/"
   requiredFields: ["rating", "postPath"]
