@@ -10,7 +10,7 @@ const RelatedPosts = props => {
     <div>
       <H1>Related Posts</H1>
       {posts.edges.map(post => (
-        <div>
+        <div key={post.node.id}>
           <Link to={post.node.frontmatter.path}>
             {post.node.frontmatter.title}
           </Link>
