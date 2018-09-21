@@ -26,7 +26,12 @@ const Meta = props => {
       headline: title,
       description: data.description,
       datePublished: data.date,
-      image: rootUrl + logo
+      image: rootUrl + logo,
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: data.rating.ratingValue,
+        ratingCount: data.rating.ratingCount
+      }
     };
   }
 

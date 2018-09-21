@@ -73,25 +73,34 @@ export default function Template(props) {
   } = props.data;
   const { frontmatter, html, timeToRead, excerpt } = markdownRemark;
 
+  const ratingValue =
+    ratings && ratings.edges
+      ? ratings.edges.reduce(
+          (accumulator, rating) => accumulator + parseInt(rating.node.rating),
+          0
+        ) / ratings.totalCount
+      : 0;
+  const ratingCount = ratings && ratings.edges ? ratings.totalCount : 0;
+
   return (
     <Layout>
       <Content>
-        <Meta data={{ ...frontmatter, description: excerpt }} rich />
+        <Meta
+          data={{
+            ...frontmatter,
+            description: excerpt,
+            rating: { ratingValue, ratingCount: ratingCount }
+          }}
+          rich
+        />
         <h1>{frontmatter.title}</h1>
         <Time>{timeToRead} min read</Time>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         {/* TODO calculate score in gatsby-node*/}
         {ratings ? (
           <Rating>
-            Rating:{" "}
-            {ratings && ratings.edges
-              ? ratings.edges.reduce(
-                  (accumulator, rating) =>
-                    accumulator + parseInt(rating.node.rating),
-                  0
-                ) / ratings.totalCount
-              : null}{" "}
-            - {ratings.totalCount} Reviews
+            Rating: {ratingValue !== 0 ? ratingValue : null} -{" "}
+            {ratings.totalCount} Reviews
           </Rating>
         ) : null}
         <ReactStars
