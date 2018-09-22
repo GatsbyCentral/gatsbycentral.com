@@ -6,7 +6,7 @@ tags:
   - v1
 ---
 
-# Awesome Pagination for Gatsby
+## Awesome Pagination for Gatsby
 
 Love Gatsby, wanna paginate?! Sweet, that's exactly what this package is for.
 
@@ -16,7 +16,7 @@ We differ from other pagination options as follows:
 * Pass only pagination context via context
 * Provide helpers for next / previous links
 
-# Source 
+## Source 
 * [NPM](https://www.npmjs.com/package/gatsby-awesome-pagination)
 * [Github](https://github.com/GatsbyCentral/gatsby-awesome-pagination)
 

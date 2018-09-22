@@ -8,11 +8,11 @@ tags:
   - eventbrite
 ---
 
-# Eventbrite source plugin 
+## Eventbrite source plugin 
 
 You wanna show your eventbrite events on your Gatby page. We have you covered? 
 
-# How to use
+## How to use
 
 ```javascript
 // In your gatsby-config.js
@@ -29,7 +29,7 @@ plugins: [
 ]
 ```
 
-# Download
+## Download
 * [NPM](https://www.npmjs.com/package/gatsby-source-eventbrite)
 * [Github](https://github.com/GatsbyCentral/gatsby-source-eventbrite)
 
