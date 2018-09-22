@@ -103,11 +103,13 @@ export default function Template(props) {
             {ratings.totalCount} Reviews
           </Rating>
         ) : null}
+        How useful was this post for you?
         <ReactStars
           onChange={rating => {
             submitRating(rating, frontmatter.path);
           }}
           half={false}
+          size={36}
         />
         <SubscribeForm />
         <Share path={frontmatter.path} />
