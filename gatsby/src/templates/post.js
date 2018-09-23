@@ -103,7 +103,7 @@ export default function Template(props) {
             {ratings.totalCount} Reviews
           </Rating>
         ) : null}
-        How useful was this post for you?
+        Is this post useful to you? Please give us a rating!
         <ReactStars
           onChange={rating => {
             submitRating(rating, frontmatter.path);
