@@ -43,12 +43,12 @@ const submitRating = (rating, path) => {
 
   // Define what happens on successful data submission
   XHR.addEventListener("load", function(event) {
-    console.log("Yeah! Data sent and response loaded.");
+    alert("Thanks for rating us! Your rating will appear soon. Stay tuned..");
   });
 
   // Define what happens in case of error
   XHR.addEventListener("error", function(event) {
-    console.log("Oops! Something goes wrong.");
+    alert("Sorry, something went wrong. Please file an issue in github!");
   });
 
   // Set up our request
