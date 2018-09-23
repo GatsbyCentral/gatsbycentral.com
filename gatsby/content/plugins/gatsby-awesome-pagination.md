@@ -1,6 +1,6 @@
 ---
 path: "/gatsby-awesome-pagination"
-title: Pagination for GatsbyJS 
+title: Pagination Plugin for GatsbyJS 
 date: "2018-08-07"
 tags:
   - v1
