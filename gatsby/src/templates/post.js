@@ -99,7 +99,7 @@ export default function Template(props) {
         {/* TODO calculate score in gatsby-node*/}
         {ratings ? (
           <Rating>
-            Rating: {ratingValue !== 0 ? ratingValue : null} -{" "}
+            Rating: {ratingValue !== 0 ? ratingValue.toFixed(2) : null} -{" "}
             {ratings.totalCount} Reviews
           </Rating>
         ) : null}
