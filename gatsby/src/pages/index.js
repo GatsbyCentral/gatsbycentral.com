@@ -45,7 +45,7 @@ const Index = props => {
         <H2>Start here</H2>
         <PostList posts={featuredPosts} />
         <H2 id="posts">Posts</H2>
-        <PostList posts={posts} />
+        <PostList posts={posts} showTags={true} />
         <H2 id="tutorials">Tutorials</H2>
         <PostList posts={tutorials} />
         <H2 id="snippets">Snippets</H2>
@@ -73,6 +73,7 @@ export const query = graphql`
           frontmatter {
             title
             path
+            tags
           }
         }
       }

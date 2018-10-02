@@ -1,15 +1,15 @@
 import React from "react";
-import { map } from "ramda";
+import { map, partial } from "ramda";
 
 import PostListItem from "./components/PostListItem";
 import Container from "components/Layout/Container";
 
-const renderPosts = map(post => (
-  <PostListItem item={post} key={post.node.id} />
-));
+const renderPost = (showTags, post) => (
+  <PostListItem item={post} key={post.node.id} showTags={showTags} />
+);
 
-const PostList = ({ posts }) => {
-  return <Container>{renderPosts(posts)}</Container>;
+const PostList = ({ posts, showTags }) => {
+  return <Container>{map(partial(renderPost, [showTags]), posts)}</Container>;
 };
 
 export default PostList;
