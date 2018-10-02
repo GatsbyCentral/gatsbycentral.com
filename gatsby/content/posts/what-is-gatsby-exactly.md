@@ -2,6 +2,8 @@
 path: "/what-is-gatsby-exactly"
 title: What is Gatsby exactly?
 date: "2018-03-16"
+tags:
+  - intro
 ---
 You've heard people raving about Gatsby. You've seen how fast Gatsby sites are. But what is Gatsby exactly?
 
