@@ -1,5 +1,5 @@
 ---
-path: "/enable-absolute-imports-for-gatsby-v2
+path: "/enable-absolute-imports-for-gatsby-v2"
 title: "Enable absolute imports for Gatsby v2"
 date: "2018-10-14"
 tags:
