@@ -105,6 +105,7 @@ export const query = graphql`
     }
     plugins: allMarkdownRemark(
       filter: { fields: { collection: { eq: "plugins" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {
