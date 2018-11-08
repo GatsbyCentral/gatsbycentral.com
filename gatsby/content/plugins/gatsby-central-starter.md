@@ -13,7 +13,7 @@ Opinionated starter project for GatsbyJS. Its our starting point for new project
 
 ## Features
 * [GatsbyJS](https://www.gatsbyjs.org) v2
-* [styled-components](https://www.styled-componentscom)
+* [styled-components](https://www.styled-components.com)
 * [unstyled](https://www.unstyled.io)
 * Offline support
 * SEO
